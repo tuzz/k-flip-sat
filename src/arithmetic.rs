@@ -4,9 +4,14 @@ use crate::*;
 pub fn counter(bits: &[i32]) -> Vec<i32> {
     let max_bits = log2_ceil(bits.len());
 
-    let sums = bits.chunks(2).map(|pair| {
-        let (sum, carry) = half_adder(pair[0], pair[1]);
-        vec![sum, carry]
+    let sums = bits.chunks(2).map(|chunk| {
+        match chunk.len() {
+            1 => chunk.to_vec(),
+            _ => {
+                let (sum, carry) = half_adder(chunk[0], chunk[1]);
+                vec![sum, carry]
+            },
+        }
     }).collect::<Vec<_>>();
 
     recursive_adder(&sums, max_bits)
@@ -117,7 +122,7 @@ fn round_up_to_power_of_2(n: usize) -> usize {
 }
 
 fn log2_ceil(n: usize) -> usize {
-    for i in (0..) {
+    for i in 0.. {
         if 2_usize.pow(i) >= n {
             return i as usize;
         }
