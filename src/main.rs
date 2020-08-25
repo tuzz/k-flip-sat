@@ -1,11 +1,13 @@
 mod arithmetic;
 mod formula;
 mod input;
+mod logic;
 mod solver;
 
 use crate::arithmetic::*;
 use crate::formula::*;
 use crate::input::*;
+use crate::logic::*;
 use crate::solver::*;
 use ipasir_sys::*;
 use lazy_static::*;

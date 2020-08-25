@@ -1,5 +1,6 @@
 use crate::*;
 
+// Counts how many bits are true and produces a binary number.
 pub fn counter(bits: &[i32]) -> Vec<i32> {
     let max_bits = log2_ceil(bits.len());
 
@@ -86,6 +87,29 @@ pub fn half_adder(a: i32, b: i32) -> (i32, i32) {
     SOLVER.add_clause(&[a, b, -out]);
 
     (out, c_out)
+}
+
+// Returns a literal that is true iff the binary number a is less than b.
+// Works recursively from the MSB to the LSB and tests each bit in turn.
+pub fn less_than(a: &[i32], b: &[i32]) -> i32 {
+    assert_eq!(a.len(), b.len());
+
+    let last_a = *a.last().unwrap();
+    let last_b = *b.last().unwrap();
+
+    let is_less = and(-last_a, last_b);
+
+    match a.len() {
+        1 => is_less,
+        n => {
+            let is_equal = equal(last_a, last_b);
+
+            let head_a = &a[0..n - 1];
+            let head_b = &b[0..n - 1];
+
+            or(is_less, and(is_equal, less_than(head_a, head_b)))
+        }
+    }
 }
 
 fn round_up_to_power_of_2(n: usize) -> usize {
@@ -221,5 +245,29 @@ mod test {
 
         let out = counter(&[t, t, t, t, t, t, t, t, t, t]);
         assert_assigned(&out, &[false, true, false, true]); // 10
+    }
+
+    #[test]
+    fn it_can_test_whether_one_number_is_less_than_another() {
+        let t = SOLVER.true_literal();
+        let f = SOLVER.false_literal();
+
+        let out = less_than(&[t, t], &[t, t]); // 3 < 3
+        assert_assigned(&[out], &[false]);
+
+        let out = less_than(&[f, t], &[t, t]); // 2 < 3
+        assert_assigned(&[out], &[true]);
+
+        let out = less_than(&[t, f], &[t, t]); // 1 < 3
+        assert_assigned(&[out], &[true]);
+
+        let out = less_than(&[f, f], &[t, t]); // 0 < 3
+        assert_assigned(&[out], &[true]);
+
+        let out = less_than(&[t, t], &[f, t]); // 3 < 2
+        assert_assigned(&[out], &[false]);
+
+        let out = less_than(&[f, t], &[t, f]); // 2 < 1
+        assert_assigned(&[out], &[false]);
     }
 }
