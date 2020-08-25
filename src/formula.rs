@@ -1,5 +1,6 @@
 use dimacs::*;
 
+#[derive(Debug)]
 pub struct Formula {
     num_vars: u64,
     clauses: Vec<Vec<i64>>,
