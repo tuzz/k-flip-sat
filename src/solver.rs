@@ -88,5 +88,11 @@ impl Solver {
     }
 }
 
+impl Drop for Solver {
+    fn drop(&mut self) {
+        unsafe { ipasir_release(self.pointer); }
+    }
+}
+
 unsafe impl Send for Solver { }
 unsafe impl Sync for Solver { }
