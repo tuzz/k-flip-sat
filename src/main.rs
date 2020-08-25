@@ -1,10 +1,12 @@
 mod arithmetic;
+mod binary;
 mod formula;
 mod input;
 mod logic;
 mod solver;
 
 use crate::arithmetic::*;
+use crate::binary::*;
 use crate::formula::*;
 use crate::input::*;
 use crate::logic::*;
