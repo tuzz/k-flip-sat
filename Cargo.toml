@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 dimacs = "0.2.0"
 ipasir-sys = "0.3.0"
+lazy_static = "1.4.0"

@@ -1,5 +1,4 @@
-use std::env::args;
-use std::io::{stdin, Read};
+use crate::*;
 
 pub struct Input;
 
