@@ -23,6 +23,7 @@ use std::{cell::RefCell, rc::Rc};
 use std::{env::args, ops::Deref};
 use std::io::{stdin, Read};
 use std::str::from_utf8;
+use xz2::read::XzDecoder;
 
 fn main() {
     let dimacs = Input::read_dimacs_from_stdin();
