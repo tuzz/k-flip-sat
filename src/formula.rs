@@ -2,8 +2,8 @@ use dimacs::{Instance, Sign, Clause, parse_dimacs};
 
 #[derive(Debug)]
 pub struct Formula {
-    num_vars: u32,
-    clauses: Vec<Vec<i32>>,
+    pub num_vars: u32,
+    pub clauses: Vec<Vec<i32>>,
 }
 
 impl Formula {

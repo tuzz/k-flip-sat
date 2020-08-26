@@ -28,24 +28,27 @@ impl Solver {
             false_literal: 0,
         };
 
-        let solver = Self { inner: Rc::new(RefCell::new(inner)) };
+        Self { inner: Rc::new(RefCell::new(inner)) }
+    }
 
-        let t = solver.new_literal();
-        let f = solver.new_literal();
+    pub fn sync_with_formula(&self, formula: &Formula) {
+        let mut inner = self.inner.borrow_mut();
 
-        solver.add(t);
-        solver.add(0);
+        inner.literals += formula.num_vars;
+        inner.clauses += formula.clauses.len() as u32;
+    }
 
-        solver.add(-f);
-        solver.add(0);
+    pub fn set_ground_literals(&self) {
+        let ground_truth = self.new_literal();
+        let ground_false = self.new_literal();
 
-        let mut inner = solver.inner.borrow_mut();
+        self.add_clause(&[ground_truth]);
+        self.add_clause(&[-ground_false]);
 
-        inner.true_literal = t;
-        inner.false_literal = f;
+        let mut inner = self.inner.borrow_mut();
 
-        drop(inner);
-        solver
+        inner.true_literal = ground_truth;
+        inner.false_literal = ground_false;
     }
 
     pub fn new_literal(&self) -> i32 {

@@ -13,19 +13,18 @@ use crate::logic::*;
 use crate::solver::*;
 use ipasir_sys::*;
 use lazy_static::*;
-use std::cell::RefCell;
-use std::env::args;
+use std::{cell::RefCell, rc::Rc};
+use std::{env::args, ops::Deref};
 use std::io::{stdin, Read};
 
 fn main() {
     let dimacs = Input::read_dimacs_from_stdin();
-    let flips = Input::read_flips_from_cli_argument();
+    let _flips = Input::read_flips_from_cli_argument();
     let formula = Formula::parse(&dimacs);
-    let solver = Solver::new();
 
-    solver.add(1);
-    solver.add(0);
-    solver.run();
+    // Keep our solver's literals in-sync with those in the formula.
+    SOLVER.sync_with_formula(&formula);
 
-    println!("{:?}", solver.assignment(1));
+    // We need ground true/false for some of the circuit reductions.
+    SOLVER.set_ground_literals();
 }
