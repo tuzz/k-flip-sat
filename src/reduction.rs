@@ -1,12 +1,12 @@
 use crate::*;
 
-pub struct Reduction {
-    formula: Formula,
+pub struct Reduction<'a> {
+    formula: &'a Formula,
     random: SmallRng,
 }
 
-impl Reduction {
-    pub fn new(formula: Formula) -> Self {
+impl<'a> Reduction<'a> {
+    pub fn new(formula: &'a Formula) -> Self {
         let random = SmallRng::from_entropy();
 
         Self { formula, random }

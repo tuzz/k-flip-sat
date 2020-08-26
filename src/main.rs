@@ -3,6 +3,7 @@ mod binary;
 mod formula;
 mod input;
 mod logic;
+mod output;
 mod reduction;
 mod solver;
 
@@ -11,6 +12,7 @@ use crate::binary::*;
 use crate::formula::*;
 use crate::input::*;
 use crate::logic::*;
+use crate::output::*;
 use crate::solver::*;
 use crate::reduction::*;
 use ipasir_sys::*;
@@ -31,7 +33,7 @@ fn main() {
     // We need ground true/false for some of the circuit reductions.
     SOLVER.set_ground_literals();
 
-    let mut reduction = Reduction::new(formula);
+    let mut reduction = Reduction::new(&formula);
     let unsats = reduction.add_clauses_with_unsat_literals();
     let num_unsat = reduction.count_unsatisfied_clauses(&unsats);
     let unsat_limit = Binary::of_length(num_unsat.len());
@@ -49,12 +51,22 @@ fn main() {
     // Randomly assign true/false to each assigned literal.
     reduction.start_by_assuming_random_assignments(&assignments);
 
+    let mut output = Output::new(&formula);
+
     while SOLVER.run() { // Until there are no more solutions.
         let threshold = Binary::decode(&num_unsat);
+
+        output.print_number_of_flips(&num_flips, k_flips);
+        output.print_clause_progress(threshold);
+        output.print_solution_line(threshold);
+        output.remember_assignments();
 
         reduction.set_assignments_to_those_of_the_solution(&assignments);
 
         // The number of unsat clauses strictly decreases per iteration.
         Binary::assume(&unsat_limit, threshold);
     }
+
+    output.print_assigned_variables();
+    output.print_whether_solved(k_flips);
 }
