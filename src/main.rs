@@ -58,7 +58,7 @@ fn main() {
 
         output.print_number_of_flips(&num_flips, k_flips);
         output.print_clause_progress(threshold);
-        output.print_solution_line(threshold);
+        output.print_solution_cost();
         output.remember_assignments();
 
         reduction.set_assignments_to_those_of_the_solution(&assignments);
