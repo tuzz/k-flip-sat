@@ -22,17 +22,21 @@ impl Binary {
     }
 
     pub fn assign(bits: &[i32], value: u32) {
-        let string = format!("{:0width$b}", value, width = bits.len());
+        assign_with(bits, value, |bit| SOLVER.add_clause(&[bit]));
+    }
 
-        assert_eq!(string.len(), bits.len());
+    pub fn assume(bits: &[i32], value: u32) {
+        assign_with(bits, value, |bit| SOLVER.assume(bit));
+    }
+}
 
-        for (character, bit) in string.chars().rev().zip(bits) {
-            match character {
-                '0' => SOLVER.add_clause(&[-*bit]),
-                '1' => SOLVER.add_clause(&[*bit]),
-                _ => panic!(),
-            }
-        }
+fn assign_with<F: Fn(i32)>(bits: &[i32], value: u32, f: F) {
+    let string = format!("{:0width$b}", value, width = bits.len());
+
+    assert_eq!(string.len(), bits.len());
+
+    for (character, bit) in string.chars().rev().zip(bits) {
+        match character { '0' => f(-*bit), '1' => f(*bit), _ => panic!() }
     }
 }
 
