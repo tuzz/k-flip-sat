@@ -15,12 +15,14 @@ use crate::logic::*;
 use crate::output::*;
 use crate::solver::*;
 use crate::reduction::*;
+use flate2::read::GzDecoder;
 use ipasir_sys::*;
 use lazy_static::*;
 use rand::prelude::*;
 use std::{cell::RefCell, rc::Rc};
 use std::{env::args, ops::Deref};
 use std::io::{stdin, Read};
+use std::str::from_utf8;
 
 fn main() {
     let dimacs = Input::read_dimacs_from_stdin();

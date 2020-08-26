@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 dimacs = "0.2.0"
+flate2 = "1.0.17"
 ipasir-sys = "0.3.0"
 lazy_static = "1.4.0"
 rand = { version = "0.7.3", features = ["small_rng"] }
