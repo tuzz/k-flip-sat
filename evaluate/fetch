@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Fetches benchmarks from the SAT 2020 competition's main track that are at most
+# the number of bytes specified on the command line. Defaults to 100KB.
+
+max_bytes=${1:-100000}
+
+mkdir -p evaluate/benchmarks && \
+cd evaluate/benchmarks && \
+curl https://satcompetition.github.io/2020/downloads/sc2020-main.uri | \
+xargs -n1 curl --max-filesize $max_bytes --remote-name --remote-header-name
