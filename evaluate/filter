@@ -7,7 +7,7 @@ timeout=${1:-300}
 
 mkdir -p evaluate/benchmarks/satisfiable
 
-for file in evaluate/benchmarks/*.xz; do
+for file in evaluate/benchmarks/*.cnf; do
   cadical -t $timeout --quiet $file
 
   if [ $? -eq 10 ]; then

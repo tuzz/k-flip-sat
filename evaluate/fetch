@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Fetches benchmarks from the SAT 2020 competition's main track that are at most
-# the number of bytes specified on the command line. Defaults to 100KB.
+# Fetch a set of uniform random 3-SAT instances from this page:
+# https://www.cs.ubc.ca/~hoos/SATLIB/benchm.html
 
-max_bytes=${1:-100000}
-
+wget https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/RND3SAT/uf100-430.tar.gz
+tar xvfz uf100-430.tar.gz && \
+ls *.cnf | xargs -n1 sed -i '' '/%/{N;N;d;}' && \
 mkdir -p evaluate/benchmarks && \
-cd evaluate/benchmarks && \
-curl https://satcompetition.github.io/2020/downloads/sc2020-main.uri | \
-xargs -n1 curl --max-filesize $max_bytes --remote-name --remote-header-name
+mv *.cnf evaluate/benchmarks && \
+rm uf100*
