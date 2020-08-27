@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-results = `cat evaluate/measurements/* | grep 'clauses with k='`
 buckets = Hash.new { |k, v| k[v] = Hash.new(0) }
 
 min_k, max_k = 999, 0
@@ -8,24 +7,28 @@ min_n, max_n = 999, 0
 
 start_clauses = []
 
-results.lines.each do |line|
-  numbers = line.scan(/\d+/)
+Dir.glob("evaluate/measurements/*").each do |path|
+  File.read(path).lines.each do |line|
+    next unless line.include?("clauses with k=")
 
-  n = numbers.first.to_i
-  k = numbers.last.to_i
+    numbers = line.scan(/\d+/)
 
-  if k == 0
-    start_clauses.push(n)
-    next
+    n = numbers.first.to_i
+    k = numbers.last.to_i
+
+    if k == 0
+      start_clauses.push(n)
+      next
+    end
+
+    buckets[k][n] += 1
+
+    min_k = k if k < min_k
+    max_k = k if k > max_k
+
+    min_n = n if n < min_n
+    max_n = n if n > max_n
   end
-
-  buckets[k][n] += 1
-
-  min_k = k if k < min_k
-  max_k = k if k > max_k
-
-  min_n = n if n < min_n
-  max_n = n if n > max_n
 end
 
 header = min_k.upto(max_k).to_a.join(" ")
