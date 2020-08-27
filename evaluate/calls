@@ -1,9 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env ruby
 
 # Counts the total number of calls made to Cadical. Each time the algorithm runs
 # it is called multiple times through its incremental interface.
 
-optimums=$(cat evaluate/measurements/* | grep ^o | wc -l)
-finals=$(ls evaluate/measurements/* | wc -l)
+count = 0
 
-echo "$(($optimums + $finals)) calls were made to cadical"
+Dir.glob("evaluate/measurements/*").each do |path|
+  File.read(path).lines.each do |line|
+    count += 1 if line.start_with?("o")
+  end
+
+  count += 1
+end
+
+puts "#{count} calls were made to cadical"
