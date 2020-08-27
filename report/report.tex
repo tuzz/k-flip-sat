@@ -1,8 +1,45 @@
 \documentclass{article}
-\usepackage[a4paper, margin=0.5in]{geometry}
+\usepackage[a4paper, margin=0.7in]{geometry}
 \usepackage[table]{xcolor}
 \usepackage{pgfplotstable}
 \pgfplotsset{compat=1.17}
+
+\begin{document}
+\title{A k-flip local search algorithm for SAT and MAX SAT}
+\author{Chris Patuzzo}
+\maketitle
+
+\abstract
+Local search can be applied to SAT by determining whether it is possible to
+increase the number of satisfied clauses for a given truth assignment by
+flipping at most $k$ variables. However, for a problem instance with $v$
+variables, the search space is of order $v^k$. A naive approach that enumerates
+every combination is impractical for all but the smallest of problems. This
+paper outlines a hybrid approach that plays to the strength of modern SAT
+solvers to search this space more efficiently. We describe an encoding of SAT
+to a related problem –\linebreak k-Flip MAX SAT – and show how through repeated
+application, it can be used to decide SAT and MAX SAT problems. Finaly, we test
+the algorithm on a benchmark set with different values of $k$ to see how it
+performs.
+
+\section{Introduction}
+- sat problems have hundreds or thousands of variables, doesn't scale
+
+- explain k-flip max sat
+
+- explain ipasir and justify it for this problem
+
+\section{The encoding}
+
+\subsection{Unsatisfied clauses}
+\subsection{Flipped variables}
+\subsection{Parallel counter}
+\subsection{Less-than comparator}
+
+\section{Repeated application}
+
+\section{Empirical results}
+
 
 \pgfplotstableset{
   every head row/.style={after row=\hline},
@@ -15,7 +52,6 @@
   }
 }
 
-\begin{document}
 \begin{table}
 \centering
 \pgfplotstabletypeset[color cells]{
