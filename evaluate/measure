@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Runs the k-flip algorithm for different values of k on each of the satisfiable
+# benchmarks. Writes output to a set of files. k ranges from 0 to 10 by default.
+
+max_k=${1:-10}
+runs=${2:-10}
+
+mkdir -p evaluate/measurements
+
+for file in evaluate/benchmarks/satisfiable/*.cnf; do
+  for k in $(seq 0 $max_k); do
+    for r in $(seq 1 $runs); do
+      outfile="evaluate/measurements/$(basename $file)-k=$k-run=$r.txt"
+      cargo run $k < $file > $outfile
+    done
+  done
+done
