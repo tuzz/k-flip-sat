@@ -18,7 +18,7 @@ every combination is impractical for all but the smallest of problems. This
 paper outlines a hybrid approach that plays to the strength of modern SAT
 solvers to search this space more efficiently. We describe an encoding of SAT
 to a related problem –\linebreak k-Flip MAX SAT – and show how through repeated
-application, it can be used to decide SAT and MAX SAT problems. Finaly, we test
+application, it can be used to solve SAT and MAX SAT problems. Finaly, we test
 the algorithm on a benchmark set with different values of $k$ to see how it
 performs.
 
@@ -31,8 +31,20 @@ performs.
 
 \section{The encoding}
 
-\subsection{Unsatisfied clauses}
+At a high-level, the encoding works by introducing a set of variables $A$ that
+represents a hypothetical SAT solver's current truth assignment of variables
+within some formula $F$. A corresponding set of variables $A'$ is introduced
+that is allowed to differ by at most $k$ truth assignments from $A$.  We use a
+counter circuit and a less-than comparator to enforce this constraint.
+
+For each clause in $F$, we introduce a variable whose intended meaning is that
+the related clause has not been satisfied by $A'$. Collectively, we call this
+set $U$. We enforce that the number of true literals in $U$ is less than the
+SAT solver's current number of unsatisfied clauses for $F$. We once again use a
+counter circuit and less-than comparator to enforce this constraint.
+
 \subsection{Flipped variables}
+\subsection{Unsatisfied clauses}
 \subsection{Parallel counter}
 \subsection{Less-than comparator}
 
