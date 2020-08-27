@@ -82,7 +82,7 @@ impl<'a> Output<'a> {
         let num_satisfied = num_clauses - self.previous;
 
         if self.previous == 0 {
-            println!("c completely solved all clauses with k={}", k_flips);
+            println!("c completely solved all {} clauses with k={}", num_clauses, k_flips);
             println!("s OPTIMUM FOUND");
         } else {
             println!("c stuck at {}/{} clauses with k={}", num_satisfied, num_clauses, k_flips);

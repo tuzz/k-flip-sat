@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+
+results = `cat evaluate/measurements/* | grep 'clauses with k='`
+buckets = Hash.new { |k, v| k[v] = Hash.new(0) }
+
+min_k, max_k = 999, 0
+min_n, max_n = 999, 0
+
+start_clauses = []
+
+results.lines.each do |line|
+  numbers = line.scan(/\d+/)
+
+  n = numbers.first.to_i
+  k = numbers.last.to_i
+
+  if k == 0
+    start_clauses.push(n)
+    next
+  end
+
+  buckets[k][n] += 1
+
+  min_k = k if k < min_k
+  max_k = k if k > max_k
+
+  min_n = n if n < min_n
+  max_n = n if n > max_n
+end
+
+header = min_k.upto(max_k).to_a.join(" ")
+puts "x #{header}"
+
+max_n.downto(min_n) do |n|
+  print "#{n} "
+  min_k.upto(max_k) do |k|
+    print "#{buckets[k][n]} "
+  end
+  puts
+end
+
+puts
+puts "k is between #{min_k} and #{max_k}"
+puts "n is between #{min_n} and #{max_n}"
+
+average = start_clauses.sum.to_f / start_clauses.size
+puts "started from #{average} clauses on average"

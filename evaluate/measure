@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Runs the k-flip algorithm for different values of k on each of the satisfiable
-# benchmarks. Writes output to a set of files. k ranges from 0 to 10 by default.
+# benchmarks. Writes output to a set of files. k ranges from 0 to 25 by default.
 
-max_k=${1:-10}
-runs=${2:-10}
+max_k=${1:-20}
+runs=${2:-5}
 
 mkdir -p evaluate/measurements
 
