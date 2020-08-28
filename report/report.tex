@@ -17,8 +17,8 @@ variables, the search space is of order $v^k$. A naive approach that enumerates
 every combination is impractical for all but the smallest of problems. This
 paper outlines a hybrid approach that plays to the strength of modern SAT
 solvers to search this space more efficiently. We describe an encoding of SAT
-to a related problem –\linebreak k-Flip MAX SAT – and show how through repeated
-application, it can be used to solve SAT and MAX SAT problems. Finaly, we test
+to a related problem –\linebreak k-Flip MAX SAT – and show how, through repeated
+application, it can be used to solve SAT and MAX SAT problems. Finally, we test
 the algorithm on a benchmark set with different values of $k$ to see how it
 performs.
 
@@ -38,7 +38,7 @@ that is allowed to differ by at most $k$ truth assignments from $A$.  We use a
 counter circuit and a less-than comparator to enforce this constraint.
 
 For each clause in $F$, we introduce a variable whose intended meaning is that
-the related clause has not been satisfied by $A'$. Collectively, we call this
+its related clause has not been satisfied by $A'$. Collectively, we call this
 set $U$. We enforce that the number of true literals in $U$ is less than the
 SAT solver's current number of unsatisfied clauses for $F$. We once again use a
 counter circuit and less-than comparator to enforce this constraint.
@@ -52,41 +52,51 @@ counter circuit and less-than comparator to enforce this constraint.
 
 \section{Empirical results}
 
-
 \pgfplotstableset{
   every head row/.style={after row=\hline},
   every first column/.style={column type/.add={}{|}},
+  columns/x/.style={column name={}, postproc cell content/.code={}},
   color cells/.style={
     postproc cell content/.code={%
-      \pgfkeysalso{@cell content=\rule{0cm}{2.4ex}\cellcolor{blue!##1}\pgfmathtruncatemacro\number{##1}##1}%
+      \pgfkeysalso{@cell content=\rule{0cm}{2.4ex}%
+      \pgfmathsetmacro\y{min(100,max(0,abs(round(##1 * 0.07))))}%
+      \edef\temp{\noexpand\cellcolor{blue!\y}}\temp%
+      \pgfmathtruncatemacro\x\y%
+      \ifnum\x>50 \color{white}\fi%
+      ##1}%
     },
-    columns/x/.style={column name={}, postproc cell content/.code={}}
   }
 }
 
+\newgeometry{left=0.5in}
 \begin{table}
 \centering
-\pgfplotstabletypeset[color cells]{
+\pgfplotstabletypeset[color cells, font=\footnotesize]{
 x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
-430 0 0 0 1 4 4 8 10 17 17 17 22 21 28 24 32 42 31 41 37
-429 0 0 1 10 16 15 20 22 17 25 26 21 27 26 30 22 14 21 18 22
-428 0 3 11 13 14 14 16 17 14 12 13 11 10 6 6 6 4 7 1 1
-427 0 7 11 18 14 23 8 9 10 5 4 6 2 0 0 0 0 1 0 0
-426 1 6 15 9 9 3 7 2 1 1 0 0 0 0 0 0 0 0 0 0
-425 3 9 10 7 2 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0
-424 4 13 5 2 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
-423 5 10 5 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-422 7 7 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-421 3 4 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-420 9 4 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-419 6 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-418 8 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-417 11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-416 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-415 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-414 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-413 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+430 0 2 7 28 75 105 163 227 303 370 417 499 571 610 645 678 797 798 838 879
+429 1 16 68 171 250 345 443 478 519 555 574 609 580 588 616 595 503 520 494 465
+428 0 46 156 305 376 454 429 416 389 341 316 231 217 180 121 117 91 76 65 53
+427 7 122 270 369 328 305 253 197 154 110 79 50 27 20 16 9 9 6 3 3
+426 14 191 307 240 213 152 86 69 35 25 18 11 4 2 2 1 0 0 0 0
+425 37 251 256 158 107 32 24 14 3 4 1 0 1 0 0 0 0 0 0 0
+424 78 240 182 85 43 8 6 4 1 0 0 0 0 0 0 0 0 0 0 0
+423 121 209 92 35 10 2 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+422 173 145 34 13 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+421 181 104 21 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+420 165 46 7 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+419 179 22 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+418 161 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+417 110 5 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+416 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+415 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+414 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+413 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+412 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+411 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+409 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 }
 \caption{caption}
 \end{table}
+\restoregeometry
 \end{document}
