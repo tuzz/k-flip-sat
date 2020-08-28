@@ -1,7 +1,9 @@
 \documentclass{article}
 \usepackage[a4paper, margin=0.7in]{geometry}
 \usepackage[table]{xcolor}
+\usepackage[mathscr]{euscript}
 \usepackage{pgfplotstable}
+\usepackage{amsmath}
 \pgfplotsset{compat=1.17}
 
 \begin{document}
@@ -31,21 +33,123 @@ performs.
 
 \section{The encoding}
 
-At a high-level, the encoding works by introducing a set of variables $A$ that
-represents a hypothetical SAT solver's current truth assignment of variables
-within some formula $F$. A corresponding set of variables $A'$ is introduced
-that is allowed to differ by at most $k$ truth assignments from $A$.  We use a
-counter circuit and a less-than comparator to enforce this constraint.
+At a high level, the encoding takes some SAT formula $F$ and parameter $k$ and
+transforms it into a new SAT formula $F'$ that is satisfiable if and only if
+$F$ is satisfiable subject to two numerical constraints:
 
-For each clause in $F$, we introduce a variable whose intended meaning is that
-its related clause has not been satisfied by $A'$. Collectively, we call this
-set $U$. We enforce that the number of true literals in $U$ is less than the
-SAT solver's current number of unsatisfied clauses for $F$. We once again use a
-counter circuit and less-than comparator to enforce this constraint.
+\begin{enumerate}
+  \item The first numerical constraint enforces the ‘k-flips’ requirement. A
+    set of variables $A$ is introduced that represents some truth assignment
+    for $F$. A corresponding set of variables $A'$ is added that is allowed to
+    differ by at most $k$ truth values from $A$. Intuitively, this delta is the
+    subset of variables that has been ‘flipped’. We use a counter circuit and a
+    less-than comparator to enforce this constraint.
+
+  \item The second numerical constraint limits the number of unsatisfied
+    clauses in $F$ subject to the set of truth values $A'$. For each clause in
+    $F$, we introduce a variable whose intended meaning is that its related
+    clause has not been satisfied by $A'$. Collectively, we call this set $U$.
+    We once again use a counter circuit and less-than comparator to enforce
+    that the number of true literals in $U$ is less than some value.
+\end{enumerate}
+
+\noindent Our encoding has the advantage of separating its numerical
+constraints from their threshold values. The latter can either by specified by
+appending unit clauses to $F'$ or through assumptions as part of the IPASIR
+interface.
 
 \subsection{Flipped variables}
+
+Let $\#v$ be the number of variables in $F$. Add a clause to $F'$ that is
+satisfied if either $A_i$ and $A'_i$ have the same truth value or $Fl_i$ is
+true. Formula \ref{flipped2} is equivalent to Formula \ref{flipped1} but is
+rewritten in conjunctive normal form.
+
+\begin{equation}
+  \label{flipped1}
+  \bigwedge\limits_{i=1}^{\#v} A_i \to A'_i \lor Fl_i
+\end{equation}
+
+\begin{equation}
+  \label{flipped2}
+  \bigwedge\limits_{i=1}^{\#v} \neg{A_i} \lor A'_i \lor Fl_i
+\end{equation}
+
+\noindent The intended meaning of $Fl_i$ is that variable $i$ in $F$ has been
+flipped from some pre-assigned truth value $A_i$ to a new value $A'_i$. However,
+we do not add clauses that preclude $Fl_i$ from being true when $A_i$ and $A'_i$
+are assigned the same value. In practice, it is never advantageous for a SAT
+solver to do so due to the numeric constraints.
+
 \subsection{Unsatisfied clauses}
+
+Let $\#c$ be the number of clauses in $F$. Add a clause to $F'$ that is
+satisfied if either clause $i$ in $F$ is satisfied or $U_i$ is true. Again, we
+do not preclude $U_i$ from being true when clause $i$ is already satisfied.
+
+\begin{equation}
+  \label{unsat}
+  \bigwedge\limits_{i=1}^{\#c} Clause_i \lor U_i
+\end{equation}
+
 \subsection{Parallel counter}
+
+We encode two separate parallel counter circuits into $F'$. The first operates
+on $Fl$ and the second on $U$. Since the method of encoding is the same, we
+discuss it in general terms for a set $\mathscr{S}$. The objective of the
+encoding is to introduce a set of variables $\mathscr{C}$ of size $\lceil
+log_2(\mathscr{S}) \rceil$ such that the formula $F'$ is satisfiable if and
+only if $\mathscr{C}$ is assigned truth values representing a binary number
+equal to the count of true literals in $\mathscr{S}$.
+
+The encoding works by first applying a half-adder gate to consecutive,
+non-overlapping pairs of variables $a, b \in \mathscr{S}$. We use a propagation
+complete encoding (Formula \ref{halfadder}) which can be derived from the
+propagation complete encoding of a full-adder (Formula \ref{fulladder}) by
+setting $carry_{in}$ to \textbf{false} and simplifying.
+
+\begin{equation}
+  \label{halfadder}
+  \begin{split}
+    a \lor \neg{b} \lor sum \\
+    \neg{a} \lor \neg{b} \lor \neg{sum} \\
+    \neg{a} \lor carry_{in} \lor sum \\
+    a \lor \neg{carry_{in}} \lor \neg{sum} \\
+    b \lor \neg{carry_{in}} \\
+    a \lor b \lor \neg{sum} \\
+  \end{split}
+\end{equation}
+
+\noindent The encoding then proceeds recursively. It subdivides the auxiliary
+variables produced by the half-adders until either one or two pairs of variables
+remain. If two pairs remain, a full-adder (Formula \ref{fulladder}) sums the
+result. Afterwards a ripple-carry adder is used to recombine these sums. A
+ripple-carry also makes use of multiple full-adders. Its description is omitted
+here because it is encoded in the conventional way.
+
+\begin{equation}
+  \label{fulladder}
+  \begin{split}
+    a \lor \neg{b} \lor carry_{in} \lor sum \\
+    a \lor b \lor \neg{carry_{in}} \lor sum \\
+    \neg{a} \lor \neg{b} \lor carry_{in} \lor \neg{sum} \\
+    \neg{a} \lor b \lor \neg{carry_{in}} \lor \neg{sum} \\
+    \neg{a} \lor carry_{out} \lor sum \\
+    a \lor \neg{carry_{out}}\lor \neg{sum} \\
+    \neg{b} \lor \neg{carry_{in}} \lor carry_{out} \\
+    b \lor carry_{in} \lor \neg{carry_{out}} \\
+    \neg{a} \lor \neg{b} \lor \neg{carry_{in}} \lor sum \\
+    a \lor b \lor carry_{in} \lor \neg{sum} \\
+  \end{split}
+\end{equation}
+
+\noindent In general, when two N-bit binary numbers are summed, this can result
+in an (N+1)-bit binary number. However, since we know the sum will not exceed
+$\vert \mathscr{S} \vert$, there is no need to introduce redundant auxiliary
+variables that would always be false. This is a small optimisation that also
+helps the SAT solver reject assignments that would inevitably lead to conflict
+when the less-than clauses are considered.
+
 \subsection{Less-than comparator}
 
 \section{Repeated application}
@@ -59,7 +163,7 @@ counter circuit and less-than comparator to enforce this constraint.
   color cells/.style={
     postproc cell content/.code={%
       \pgfkeysalso{@cell content=\rule{0cm}{2.4ex}%
-      \pgfmathsetmacro\y{min(100,max(0,abs(round(##1 * 0.07))))}%
+      \pgfmathsetmacro\y{min(100,max(0,abs(round(##1 * 0.04))))}%
       \edef\temp{\noexpand\cellcolor{blue!\y}}\temp%
       \pgfmathtruncatemacro\x\y%
       \ifnum\x>50 \color{white}\fi%
@@ -68,31 +172,31 @@ counter circuit and less-than comparator to enforce this constraint.
   }
 }
 
-\newgeometry{left=0.5in}
+\newgeometry{left=0.4in}
 \begin{table}
 \centering
 \pgfplotstabletypeset[color cells, font=\footnotesize]{
-x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
-430 0 2 7 28 75 105 163 227 303 370 417 499 571 610 645 678 797 798 838 879
-429 1 16 68 171 250 345 443 478 519 555 574 609 580 588 616 595 503 520 494 465
-428 0 46 156 305 376 454 429 416 389 341 316 231 217 180 121 117 91 76 65 53
-427 7 122 270 369 328 305 253 197 154 110 79 50 27 20 16 9 9 6 3 3
-426 14 191 307 240 213 152 86 69 35 25 18 11 4 2 2 1 0 0 0 0
-425 37 251 256 158 107 32 24 14 3 4 1 0 1 0 0 0 0 0 0 0
-424 78 240 182 85 43 8 6 4 1 0 0 0 0 0 0 0 0 0 0 0
-423 121 209 92 35 10 2 1 0 1 0 0 0 0 0 0 0 0 0 0 0
-422 173 145 34 13 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-421 181 104 21 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-420 165 46 7 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-419 179 22 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-418 161 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-417 110 5 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-416 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-415 38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-414 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-413 17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-412 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-411 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+430 0 4 24 49 117 193 283 389 484 635 739 843 985 1058 1154 1214 1343 1366 1461 1534
+429 3 27 112 281 429 580 756 834 913 964 979 1062 1026 1035 1019 974 914 937 861 789
+428 1 87 294 522 660 798 754 741 704 597 570 424 381 315 249 243 174 139 122 118
+427 12 202 462 641 621 543 459 345 284 201 139 109 52 38 26 18 19 7 6 9
+426 20 319 535 457 360 258 157 111 63 52 26 17 8 4 2 1 0 1 0 0
+425 66 448 463 269 182 61 34 29 5 6 2 0 1 0 0 0 0 0 0 0
+424 129 435 311 148 66 18 11 6 1 0 0 0 0 0 0 0 0 0 0 0
+423 215 379 143 59 13 2 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+422 295 253 53 25 4 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+421 328 168 36 3 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+420 308 80 17 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+419 312 38 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+418 257 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+417 211 8 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+416 135 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+415 71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+414 52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+413 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+412 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+411 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 409 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 }
