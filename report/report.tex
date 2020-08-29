@@ -2,6 +2,7 @@
 \usepackage[a4paper, margin=0.7in, top=1in]{geometry}
 \usepackage[table]{xcolor}
 \usepackage[mathscr]{euscript}
+\usepackage[ruled,vlined]{algorithm2e}
 \usepackage{pgfplotstable}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -274,6 +275,46 @@ by the $\textsc{lt}^*$ operator.
 \break
 
 \section{The algorithm}
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\DontPrintSemicolon
+
+  \KwIn{A CNF formula F}
+  \KwIn{An integer k}
+  \KwOut{Whether all clauses in F have been satisfied}
+  \;
+
+  S $\gets$ initialize\_solver()\;
+  F' $\gets$ encode(F, k)\tcp*{Also encodes the k threshold value as unit clauses.}\;
+  v $\gets$ num\_vars(F)\;
+  A $\gets$ pick\_random(v, \{true, false\})\tcp*{We start with a random truth assignment for F.}\;
+  S.assume(A)\;
+  \;
+
+  \While{S.solution\_exists()}{
+    T $\gets$ S.solution()\tcp*{These assignments includes all auxiliary variables.}\;
+    A' $\gets$ decode\_new\_assignments(T)\tcp*{These are the assignments we actually care about.}
+    S.assume(A')\tcp*{The previous assumptions are dropped automatically.}
+    \;
+    u $\gets$ decode\_unsat\_clause\_count(T)\;
+    if u == 0 \{ break \}\tcp*{Check if all clauses are satisfied.}\;
+    U $\gets$ encode\_unsat\_threshold(u)\tcp*{On the next iteration there must be fewer unsat clauses.}
+    S.assume(U)\;
+    \;
+    print(“k flips solution: ”, A')\;
+    print(“clauses remaining: ”, u)\;
+ }
+ \;
+  \eIf{u == 0}{
+    print(“fully satisfied all clauses for k=”, k)\;
+    return true
+  } {
+    print(“stuck at ”, u, “, no more k-flips exist”)\;
+    return false
+  }
+ \caption{Our incremental k-flips local search algorithm}
+\end{algorithm}
 
 \section{Empirical results}
 
