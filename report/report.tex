@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a4paper, margin=0.7in]{geometry}
+\usepackage[a4paper, margin=0.7in, top=1in]{geometry}
 \usepackage[table]{xcolor}
 \usepackage[mathscr]{euscript}
 \usepackage{pgfplotstable}
@@ -27,11 +27,62 @@ the algorithm on a benchmark set with different values of $k$ to see how it
 performs.
 
 \section{Introduction}
-- sat problems have hundreds or thousands of variables, doesn't scale
 
-- explain k-flip max sat
+Modern SAT solvers are able to cope with formulas that contain many hundreds or
+thousands of variables. In doing so, they employ a variety of techniques. One
+such category of techniques is that of local search. The basic idea is that,
+for some notion of locality and for as long as possible, a SAT solver can
+transition from one candidate solution to another with the intention of
+improving its quality. A typical measure of quality is the number of clauses
+satisfied by the candidate solution – a truth assignment to variables in the
+formula.
 
-- explain ipasir and justify it for this problem
+One such notion of locality is the number of variables that have been ‘flipped’
+from one canditate solution to another, i.e. the number of truth assignments
+that differ. We say that two truth assignments are ‘k-flip neighbors’ if they
+differ in the values of at most $k$ variables[?]. The question of whether a
+“better” candidate solution exists under this notion of locality can be
+formalised into a decision problem:\\
+
+k-\textsc{flip max sat}
+
+Question: Is there a k-flip neighbor for truth assignment $A$ that satisfies
+more clauses in formula $F$ than $A$? \\
+
+\noindent For a formula that contains $v$ variables, this decision problem is
+of order $\mathcal{O}(v^k)$ which grows very quickly. However, in practice we
+may be able to decide this efficiently using a SAT solver. Whatsmore, when used
+as the basis of a local search algorithm, the k-\textsc{flip max sat} decision
+problem is decided multiple times.
+
+A fairly recent development in SAT solving has been the introduction of the
+IPASIR interface. This allows a given formula to be solved multiple times under
+different assumptions. In doing so, the SAT solver is able to preserve much of
+its ‘knowledge’ about the formula, for example, learned clauses from the CDCL
+process. If the k-\textsc{flip max sat} problem is to be used as the basis for
+a local search algorithm, it seems likely that the algorithm's performance
+would benefit from this incremental approach.
+
+Perhaps a more interesting line of investigation is to test the efficacy of
+local search in deciding SAT, through repeated application of the
+k-\textsc{flip max sat} decision problem. To what extent can a candidate
+solution be improved through this process before no k-flip neighbor exists that
+satisfies more clauses? Therefore, in this paper we investigate the following
+questions: \\
+
+- How can we encode the SAT problem into an instance of the k-\textsc{flip max sat} problem?
+
+- How can we use this encoding as the basis of an incremental local search algorithm?
+
+- How long does our incremental local search algorithm take as we vary $k$?
+
+- How effective is local search (using k-flips) at solving SAT (and MAX SAT) problems? \\
+
+\noindent The last two questions are problem-dependent so it's difficult to
+make general claims about them. We limit the scope of our investigation to a
+benchmark set of uniform random 3-SAT instances.
+
+\break
 
 \section{The encoding}
 
@@ -115,9 +166,9 @@ setting $carry_{in}$ to \textbf{false} and simplifying.
   \begin{split}
     a \lor \neg{b} \lor sum \\
     \neg{a} \lor \neg{b} \lor \neg{sum} \\
-    \neg{a} \lor carry_{in} \lor sum \\
-    a \lor \neg{carry_{in}} \lor \neg{sum} \\
-    b \lor \neg{carry_{in}} \\
+    \neg{a} \lor carry_{out} \lor sum \\
+    a \lor \neg{carry_{out}} \lor \neg{sum} \\
+    b \lor \neg{carry_{out}} \\
     a \lor b \lor \neg{sum} \\
   \end{split}
 \end{equation}\break
@@ -192,7 +243,7 @@ shown in Formulas \ref{and}, \ref{or} and \ref{eq} respectively.
 $out$ to true when $a$ is strictly less than $b$.
 
 \begin{equation}
-  \textsc{lt}(a, b) = \textsc{and}(-a, b)
+  \textsc{lt}(a, b) = \textsc{and}(\neg{a}, b)
 \end{equation}\break
 
 \noindent We then define a recursive operator for two sets of variables $A$,
@@ -201,7 +252,7 @@ $B$ and $i \in \mathbb{Z}^*$.
 \begin{equation}
   \textsc{lt}^*(A, B, i) = \begin{cases}
     \textsc{lt}(A_i, B_i) & i = 0 \\
-    \textsc{or}(\textsc{lt}(A_i, B_i), \textsc{and}(\textsc{equal}(A_i, B_i), \textsc{lt}^*(A, B, i - 1))) & i > 0
+    \textsc{or}(\textsc{lt}(A_i, B_i), \textsc{and}(\textsc{eq}(A_i, B_i), \textsc{lt}^*(A, B, i - 1))) & i > 0
   \end{cases}
 \end{equation}\break
 
@@ -212,13 +263,15 @@ use the convention that index $0$ is the least-significant bit and index $\vert
 A \vert - 1$ is the most-significant bit of a binary number.
 
 Finally, we encode the constraint that the binary number represented by
-$\mathscr{C}$ is less than some threshold value $\mathscr{T}$ such that  $\vert
-\mathscr{T} \vert = \vert \mathscr{C} \vert$ by conjuncting clauses generated
+$\mathscr{C}$ is less than some threshold value $\mathscr{T}$ (such that  $\vert
+\mathscr{T} \vert = \vert \mathscr{C} \vert$) by conjuncting clauses generated
 by the $\textsc{lt}^*$ operator.
 
 \begin{equation}
-  \bigwedge \textsc{lt}^*(\mathscr{C}, \mathscr{T})
-\end{equation}\break
+  \bigwedge \textsc{lt}^*(\mathscr{C}, \mathscr{T}, \vert \mathscr{T} \vert - 1)
+\end{equation}
+
+\break
 
 \section{The algorithm}
 
