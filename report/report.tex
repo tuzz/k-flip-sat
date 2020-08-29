@@ -4,6 +4,8 @@
 \usepackage[mathscr]{euscript}
 \usepackage{pgfplotstable}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multicol}
 \pgfplotsset{compat=1.17}
 
 \begin{document}
@@ -68,12 +70,12 @@ rewritten in conjunctive normal form.
 \begin{equation}
   \label{flipped1}
   \bigwedge\limits_{i=1}^{\#v} A_i \to A'_i \lor Fl_i
-\end{equation}
+\end{equation}\break
 
 \begin{equation}
   \label{flipped2}
   \bigwedge\limits_{i=1}^{\#v} \neg{A_i} \lor A'_i \lor Fl_i
-\end{equation}
+\end{equation}\break
 
 \noindent The intended meaning of $Fl_i$ is that variable $i$ in $F$ has been
 flipped from some pre-assigned truth value $A_i$ to a new value $A'_i$. However,
@@ -90,7 +92,7 @@ do not preclude $U_i$ from being true when clause $i$ is already satisfied.
 \begin{equation}
   \label{unsat}
   \bigwedge\limits_{i=1}^{\#c} Clause_i \lor U_i
-\end{equation}
+\end{equation}\break
 
 \subsection{Parallel counter}
 
@@ -118,14 +120,14 @@ setting $carry_{in}$ to \textbf{false} and simplifying.
     b \lor \neg{carry_{in}} \\
     a \lor b \lor \neg{sum} \\
   \end{split}
-\end{equation}
+\end{equation}\break
 
 \noindent The encoding then proceeds recursively. It subdivides the auxiliary
 variables produced by the half-adders until either one or two pairs of variables
 remain. If two pairs remain, a full-adder (Formula \ref{fulladder}) sums the
 result. Afterwards a ripple-carry adder is used to recombine these sums. A
 ripple-carry also makes use of multiple full-adders. Its description is omitted
-here because it is encoded in the conventional way.
+here because it is encoded in a conventional way.
 
 \begin{equation}
   \label{fulladder}
@@ -141,7 +143,7 @@ here because it is encoded in the conventional way.
     \neg{a} \lor \neg{b} \lor \neg{carry_{in}} \lor sum \\
     a \lor b \lor carry_{in} \lor \neg{sum} \\
   \end{split}
-\end{equation}
+\end{equation}\break
 
 \noindent In general, when two N-bit binary numbers are summed, this can result
 in an (N+1)-bit binary number. However, since we know the sum will not exceed
@@ -152,7 +154,73 @@ when the less-than clauses are considered.
 
 \subsection{Less-than comparator}
 
-\section{Repeated application}
+The less-than comparator makes use of three logical operators: \textsc{and},
+\textsc{or} and \textsc{eq}. We use the Tseitin encodings of these gates as
+shown in Formulas \ref{and}, \ref{or} and \ref{eq} respectively.
+
+\begin{multicols}{3}
+  \begin{equation}
+    \label{and}
+    \begin{split}
+      \neg{a} \lor \neg{b} \lor out \\
+      a \lor \neg{out} \\
+      b \lor \neg{out} \\
+    \end{split}
+  \end{equation}\break
+
+  \begin{equation}
+    \label{or}
+    \begin{split}
+      a \lor b \lor \neg{out} \\
+      \neg{a} \lor out \\
+      \neg{b} \lor out \\
+    \end{split}
+  \end{equation}\break
+
+  \begin{equation}
+    \label{eq}
+    \begin{split}
+      \neg{a} \lor \neg{b} \lor out \\
+      a \lor b \lor out \\
+      a \lor \neg{b} \lor \neg{out} \\
+      \neg{a} \lor b \lor \neg{out} \\
+    \end{split}
+  \end{equation}\break
+\end{multicols}
+
+\noindent First, we define a new operator that takes two variables and sets
+$out$ to true when $a$ is strictly less than $b$.
+
+\begin{equation}
+  \textsc{lt}(a, b) = \textsc{and}(-a, b)
+\end{equation}\break
+
+\noindent We then define a recursive operator for two sets of variables $A$,
+$B$ and $i \in \mathbb{Z}^*$.
+
+\begin{equation}
+  \textsc{lt}^*(A, B, i) = \begin{cases}
+    \textsc{lt}(A_i, B_i) & i = 0 \\
+    \textsc{or}(\textsc{lt}(A_i, B_i), \textsc{and}(\textsc{equal}(A_i, B_i), \textsc{lt}^*(A, B, i - 1))) & i > 0
+  \end{cases}
+\end{equation}\break
+
+\noindent The $\textsc{lt}^*$ operator tests whether variable $A_i$ is strictly
+less than $B_i$. If it is, the output of the operator is true. Otherwise, if
+they are equal, it recursively tests the $i - 1$th bit until $i$ reaches $0$. We
+use the convention that index $0$ is the least-significant bit and index $\vert
+A \vert - 1$ is the most-significant bit of a binary number.
+
+Finally, we encode the constraint that the binary number represented by
+$\mathscr{C}$ is less than some threshold value $\mathscr{T}$ such that  $\vert
+\mathscr{T} \vert = \vert \mathscr{C} \vert$ by conjuncting clauses generated
+by the $\textsc{lt}^*$ operator.
+
+\begin{equation}
+  \bigwedge \textsc{lt}^*(\mathscr{C}, \mathscr{T})
+\end{equation}\break
+
+\section{The algorithm}
 
 \section{Empirical results}
 
