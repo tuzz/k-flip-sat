@@ -41,11 +41,11 @@ satisfied by the candidate solution – a truth assignment to variables in the
 formula.
 
 One such notion of locality is the number of variables that have been ‘flipped’
-from one canditate solution to another, i.e. the number of truth assignments
+from one candidate solution to another, i.e. the number of truth assignments
 that differ. We say that two truth assignments are ‘k-flip neighbors’ if they
-differ in the values of at most $k$ variables[?]. The question of whether a
-“better” candidate solution exists under this notion of locality can be
-formalised into a decision problem:\\
+differ in the values of at most $k$ variables\cite{10.1007/978-3-642-02777-2_27}.
+The question of whether a “better” candidate solution exists under this notion
+of locality can be formalised into a decision problem:\\
 
 k-\textsc{flip max sat}
 
@@ -54,17 +54,17 @@ more clauses in formula $F$ than $A$? \\
 
 \noindent For a formula that contains $v$ variables, this decision problem is
 of order $\mathcal{O}(v^k)$ which grows very quickly. However, in practice we
-may be able to decide this efficiently using a SAT solver. Whatsmore, when used
-as the basis of a local search algorithm, the k-\textsc{flip max sat} decision
-problem is decided multiple times.
+may be able to decide this efficiently using a SAT solver. What's more, when
+used as the basis of a local search algorithm, the k-\textsc{flip max sat}
+decision problem is decided multiple times.
 
 A fairly recent development in SAT solving has been the introduction of the
-IPASIR interface. This allows a given formula to be solved multiple times under
-different assumptions. In doing so, the SAT solver is able to preserve much of
-its ‘knowledge’ about the formula, for example, learned clauses from the CDCL
-process. If the k-\textsc{flip max sat} problem is to be used as the basis for
-a local search algorithm, it seems likely that the algorithm's performance
-would benefit from this incremental approach.
+IPASIR interface\cite{balyo2016sat}. This allows a given formula to be solved
+multiple times under different assumptions. In doing so, the SAT solver is able
+to preserve much of its ‘knowledge’ about the formula, for example, learned
+clauses from the CDCL process. If the k-\textsc{flip max sat} problem is to be
+used as the basis for a local search algorithm, it seems likely that the
+algorithm's performance would benefit from this incremental approach.
 
 Perhaps a more interesting line of investigation is to test the efficacy of
 local search in deciding SAT, through repeated application of the
@@ -162,7 +162,7 @@ The encoding works by first applying a half-adder gate to consecutive,
 non-overlapping pairs of variables $a, b \in \mathscr{S}$. We use a propagation
 complete encoding (Formula \ref{halfadder}) which can be derived from the
 propagation complete encoding of a full-adder (Formula \ref{fulladder}) by
-setting $carry_{in}$ to \textbf{false} and simplifying.
+setting $carry_{in}$ to \textbf{false} and simplifying\cite{zhou2017optimizing}.
 
 \begin{equation}
   \label{halfadder}
@@ -176,12 +176,13 @@ setting $carry_{in}$ to \textbf{false} and simplifying.
   \end{split}
 \end{equation}\break
 
-\noindent The encoding then proceeds recursively. It subdivides the auxiliary
-variables produced by the half-adders until either one or two pairs of variables
-remain. If two pairs remain, a full-adder (Formula \ref{fulladder}) sums the
-result. Afterwards a ripple-carry adder is used to recombine these sums. A
-ripple-carry also makes use of multiple full-adders. Its description is omitted
-here because it is encoded in a conventional way.
+\noindent The encoding then proceeds recursively\cite{zhou2020yet}. It
+subdivides the auxiliary variables produced by the half-adders until either one
+or two pairs of variables remain. If two pairs remain, a full-adder (Formula
+\ref{fulladder}) sums the result. Afterwards a ripple-carry adder is used to
+recombine these sums. A ripple-carry also makes use of multiple full-adders.
+Its description is omitted here because it is encoded in a conventional
+way\cite{ripplecarry}.
 
 \begin{equation}
   \label{fulladder}
@@ -209,8 +210,9 @@ when the less-than clauses are considered.
 \subsection{Less-than comparator}
 
 The less-than comparator makes use of three logical operators: \textsc{and},
-\textsc{or} and \textsc{eq}. We use the Tseitin encodings of these gates as
-shown in Formulas \ref{and}, \ref{or} and \ref{eq} respectively.
+\textsc{or} and \textsc{eq}. We use the Tseitin
+encodings\cite{prestwich2009cnf} of these gates as shown in Formulas \ref{and},
+\ref{or} and \ref{eq} respectively.
 
 \begin{multicols}{3}
   \begin{equation}
@@ -334,8 +336,9 @@ The algorithm terminates when either no solution exists, i.e. when no k-flip
 improvement exists, or when all clauses in $F$ have been satisfied. We return
 true or false to indicate this. We also print each k-flip solution and the
 number of unsatisfied clauses which we use for our analysis. Since our algorithm
-is solving the unweighted MAX SAT problem, the real implementation outputs in a
-format compliant with the SAT Competition[?].
+is solving the unweighted MAX SAT problem\cite{sung2006maximum}, the real
+implementation outputs in a format compliant with the SAT
+Competition\cite{maxsat2020output}.
 
 One small caveat is that the output of our program may incorrectly report an
 inflated number of unsatisfied clauses. This is due to our encoding in Section
@@ -350,16 +353,16 @@ our algorithm, we omit it here for brevity.
 \section{Empirical results}
 
 We test our algorithm on a SATLIB benchmark set of 1000 uniform random 3-SAT
-instances. Each containing 100 variables and 430 clauses. For each formula, we
-measure how long it takes the algorithm to run to completion for values of $k$
-up to 20. Since our algorithm uses random initialization, we repeat the test
-five times for each formula. Figure 1 plots the median completion time in
-seconds across all runs.
+instances\cite{satlibproblems}. Each contains 100 variables, 430 clauses and is
+known to be satisfiable. For each formula, we measure how long it takes the
+algorithm to run to completion for values of $k$ up to 20. Since our algorithm
+uses random initialization, we repeat the test five times. Figure 1 plots the
+median completion time in seconds across all runs.
 
 We also measure k=0 to establish a baseline for the overhead of encoding the
 problem, calling the SAT solver, etc. In aggregate, we ran our algorithm 105,000
 times which took 80 CPU hours on an Intel i7-7660U. We used Cadical 1.3.1 as the
-incremental solver and called it 6,000,000 times. \\
+incremental solver\cite{biere2017cadical} and called it 6,000,000 times. \\
 
 \begin{figure}[htp]
 \begin{tikzpicture}
@@ -411,10 +414,11 @@ more challenging set such as the SAT Competition instances.
 
 We also test the efficacy of k-flip local search on this benchmark
 set, irrespective of our algorithm. We measure how many clauses are satisfied
-when no k-flip improvement exists and the algorithm terminates. Table 1 plots
-a heatmap that counts the number of runs that could be improved no further past
-some number of clauses, up to a maximum of 430 which is when all clauses have
-been satisfied for problems in this benchmark set. \\
+when no k-flip improvement exists and the algorithm terminates. After random
+assignment an average of 376 clauses were satisfied across all instances.
+Table 1 plots a heatmap that counts the number of runs that could be improved
+no further past some number of clauses, up to a maximum of 430 which is when
+all clauses have been satisfied for problems in this benchmark set. \\
 
 \pgfplotstableset{
   every head row/.style={after row=\hline},
@@ -463,8 +467,6 @@ x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 \noindent Table 1 clearly shows that local search is an effective technique for
 solving SAT and MAX SAT problems. As we increase $k$, on average we are able to
 satisfy more clauses, in some cases satisfying all of them.
-
-\cite{hello}
 
 \printbibliography
 

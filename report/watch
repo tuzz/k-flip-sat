@@ -6,4 +6,4 @@ which cargo-watch || cargo install cargo-watch
 cargo watch \
   --watch report/report.tex \
   --clear \
-  --shell 'cd report && bibtex report && cd .. && pdflatex -output-directory report report/report.tex'
+  --shell 'cd report; bibtex report; cd ..; pdflatex -output-directory report report/report.tex'
