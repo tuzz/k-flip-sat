@@ -145,7 +145,7 @@ do not preclude $U_i$ from being true when clause $i$ is already satisfied.
 
 \begin{equation}
   \label{unsat}
-  \bigwedge\limits_{i=1}^{\#c} Clause_i \lor U_i
+  \bigwedge\limits_{i=1}^{\#c} \mathit{Clause}_i \lor U_i
 \end{equation}\break
 
 \subsection{Parallel counter}
@@ -162,17 +162,18 @@ The encoding works by first applying a half-adder gate to consecutive,
 non-overlapping pairs of variables $a, b \in \mathscr{S}$. We use a propagation
 complete encoding (Formula \ref{halfadder}) which can be derived from the
 propagation complete encoding of a full-adder (Formula \ref{fulladder}) by
-setting $carry_{in}$ to \textbf{false} and simplifying\cite{zhou2017optimizing}.
+setting $\mathit{carry}_{\mathit{in}}$ to \textbf{false} and
+simplifying\cite{zhou2017optimizing}.
 
 \begin{equation}
   \label{halfadder}
   \begin{split}
-    a \lor \neg{b} \lor sum \\
-    \neg{a} \lor \neg{b} \lor \neg{sum} \\
-    \neg{a} \lor carry_{out} \lor sum \\
-    a \lor \neg{carry_{out}} \lor \neg{sum} \\
-    b \lor \neg{carry_{out}} \\
-    a \lor b \lor \neg{sum} \\
+    a \lor \neg{b} \lor \mathit{sum} \\
+    \neg{a} \lor \neg{b} \lor \neg{\mathit{sum}} \\
+    \neg{a} \lor \mathit{carry}_{\mathit{out}} \lor \mathit{sum} \\
+    a \lor \neg{\mathit{carry}_{\mathit{out}}} \lor \neg{\mathit{sum}} \\
+    b \lor \neg{\mathit{carry}_{\mathit{out}}} \\
+    a \lor b \lor \neg{\mathit{sum}} \\
   \end{split}
 \end{equation}\break
 
@@ -187,16 +188,16 @@ way\cite{ripplecarry}.
 \begin{equation}
   \label{fulladder}
   \begin{split}
-    a \lor \neg{b} \lor carry_{in} \lor sum \\
-    a \lor b \lor \neg{carry_{in}} \lor sum \\
-    \neg{a} \lor \neg{b} \lor carry_{in} \lor \neg{sum} \\
-    \neg{a} \lor b \lor \neg{carry_{in}} \lor \neg{sum} \\
-    \neg{a} \lor carry_{out} \lor sum \\
-    a \lor \neg{carry_{out}}\lor \neg{sum} \\
-    \neg{b} \lor \neg{carry_{in}} \lor carry_{out} \\
-    b \lor carry_{in} \lor \neg{carry_{out}} \\
-    \neg{a} \lor \neg{b} \lor \neg{carry_{in}} \lor sum \\
-    a \lor b \lor carry_{in} \lor \neg{sum} \\
+    a \lor \neg{b} \lor \mathit{carry}_{\mathit{in}} \lor \mathit{sum} \\
+    a \lor b \lor \neg{\mathit{carry}_{\mathit{in}}} \lor \mathit{sum} \\
+    \neg{a} \lor \neg{b} \lor \mathit{carry}_{\mathit{in}} \lor \neg{\mathit{sum}} \\
+    \neg{a} \lor b \lor \neg{\mathit{carry}_{\mathit{in}}} \lor \neg{\mathit{sum}} \\
+    \neg{a} \lor \mathit{carry}_{\mathit{out}} \lor \mathit{sum} \\
+    a \lor \neg{\mathit{carry}_{\mathit{out}}}\lor \neg{\mathit{sum}} \\
+    \neg{b} \lor \neg{\mathit{carry}_{\mathit{in}}} \lor \mathit{carry}_{\mathit{out}} \\
+    b \lor \mathit{carry}_{\mathit{in}} \lor \neg{\mathit{carry}_{\mathit{out}}} \\
+    \neg{a} \lor \neg{b} \lor \neg{\mathit{carry}_{\mathit{in}}} \lor \mathit{sum} \\
+    a \lor b \lor \mathit{carry}_{\mathit{in}} \lor \neg{\mathit{sum}} \\
   \end{split}
 \end{equation}\break
 
@@ -218,28 +219,28 @@ encodings\cite{prestwich2009cnf} of these gates as shown in Formulas \ref{and},
   \begin{equation}
     \label{and}
     \begin{split}
-      \neg{a} \lor \neg{b} \lor out \\
-      a \lor \neg{out} \\
-      b \lor \neg{out} \\
+      \neg{a} \lor \neg{b} \lor \mathit{out} \\
+      a \lor \neg{\mathit{out}} \\
+      b \lor \neg{\mathit{out}} \\
     \end{split}
   \end{equation}\break
 
   \begin{equation}
     \label{or}
     \begin{split}
-      a \lor b \lor \neg{out} \\
-      \neg{a} \lor out \\
-      \neg{b} \lor out \\
+      a \lor b \lor \neg{\mathit{out}} \\
+      \neg{a} \lor \mathit{out} \\
+      \neg{b} \lor \mathit{out} \\
     \end{split}
   \end{equation}\break
 
   \begin{equation}
     \label{eq}
     \begin{split}
-      \neg{a} \lor \neg{b} \lor out \\
-      a \lor b \lor out \\
-      a \lor \neg{b} \lor \neg{out} \\
-      \neg{a} \lor b \lor \neg{out} \\
+      \neg{a} \lor \neg{b} \lor \mathit{out} \\
+      a \lor b \lor \mathit{out} \\
+      a \lor \neg{b} \lor \neg{\mathit{out}} \\
+      \neg{a} \lor b \lor \neg{\mathit{out}} \\
     \end{split}
   \end{equation}\break
 \end{multicols}
