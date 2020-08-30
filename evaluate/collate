@@ -7,7 +7,14 @@ min_n, max_n = 999, 0
 
 start_clauses = []
 
-Dir.glob("evaluate/measurements/*").each do |path|
+durations = Hash.new { |k, v| k[v] = [] }
+previous = nil
+
+pairs = Dir.glob("evaluate/measurements/*").map do |path|
+  [path, File::Stat.new(path).ctime]
+end
+
+pairs.sort_by { |_, t| t }.each do |path, created_at|
   File.read(path).lines.each do |line|
     next unless line.include?("clauses with k=")
 
@@ -28,6 +35,13 @@ Dir.glob("evaluate/measurements/*").each do |path|
 
     min_n = n if n < min_n
     max_n = n if n > max_n
+
+    if previous
+      delta = created_at - previous
+      durations[k].push(delta)
+    end
+
+    previous = created_at
   end
 end
 
@@ -48,3 +62,9 @@ puts "n is between #{min_n} and #{max_n}"
 
 average = start_clauses.sum.to_f / start_clauses.size
 puts "started from #{average} clauses on average"
+
+puts "\nmedian completion times for values of k: "
+min_k.upto(max_k) do |k|
+  median = durations[k].sort[durations[k].size / 2]
+  puts "(#{k}, #{median})"
+end
