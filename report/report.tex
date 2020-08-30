@@ -347,6 +347,44 @@ our algorithm, we omit it here for brevity.
 
 \section{Empirical results}
 
+\centerline{
+\begin{tikzpicture}
+  \begin{axis}[
+    height=6cm,
+    width=18cm,
+    grid=major,
+    xlabel=k (max flips),
+    ylabel=completion time (s),
+    xmin=1, xmax=20,
+    ymin=0, ymax=3.5,
+  ]
+
+  \addplot coordinates {
+    (1, 0.551145807)
+    (2, 0.710333446)
+    (3, 0.860678624)
+    (4, 1.074558508)
+    (5, 1.242692629)
+    (6, 1.54847025)
+    (7, 1.853071101)
+    (8, 2.251641173)
+    (9, 2.565525581)
+    (10, 2.880892588)
+    (11, 3.175057635)
+    (12, 3.343761958)
+    (13, 3.326617468)
+    (14, 3.20757239)
+    (15, 3.066155318)
+    (16, 2.958273301)
+    (17, 2.925144212)
+    (18, 2.685329885)
+    (19, 2.633794757)
+    (20, 2.519936371)
+  };
+  \end{axis}
+\end{tikzpicture}
+}
+
 \pgfplotstableset{
   every head row/.style={after row=\hline},
   every first column/.style={column type/.add={}{|}},
@@ -363,11 +401,10 @@ our algorithm, we omit it here for brevity.
   }
 }
 
-\newgeometry{left=0.4in}
-\begin{table}
-\centering
+\begin{table}[htp]
+\setlength\tabcolsep{4.5pt}
 \pgfplotstabletypeset[color cells, font=\footnotesize]{
-  x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 430 0 4 24 49 117 193 283 389 484 635 739 843 985 1058 1154 1214 1343 1366 1461 1534
 429 3 27 112 281 429 580 756 834 913 964 979 1062 1026 1035 1019 974 914 937 861 789
 428 1 87 294 522 660 798 754 741 704 597 570 424 381 315 249 243 174 139 122 118
@@ -388,10 +425,7 @@ our algorithm, we omit it here for brevity.
 413 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 412 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 411 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-410 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-409 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 }
 \caption{caption}
 \end{table}
-\restoregeometry
 \end{document}
