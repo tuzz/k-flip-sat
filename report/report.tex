@@ -7,7 +7,9 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{multicol}
+\usepackage[backend=bibtex]{biblatex}
 \pgfplotsset{compat=1.17}
+\addbibresource{report.bib}
 
 \begin{document}
 \title{A k-flip local search algorithm for SAT and MAX SAT}
@@ -461,5 +463,9 @@ x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 \noindent Table 1 clearly shows that local search is an effective technique for
 solving SAT and MAX SAT problems. As we increase $k$, on average we are able to
 satisfy more clauses, in some cases satisfying all of them.
+
+\cite{hello}
+
+\printbibliography
 
 \end{document}
