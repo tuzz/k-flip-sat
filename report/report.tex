@@ -347,7 +347,19 @@ our algorithm, we omit it here for brevity.
 
 \section{Empirical results}
 
-\centerline{
+We test our algorithm on a SATLIB benchmark set of 1000 uniform random 3-SAT
+instances. Each containing 100 variables and 430 clauses. For each formula, we
+measure how long it takes the algorithm to run to completion for values of $k$
+up to 20. Since our algorithm uses random initialization, we repeat the test
+five times for each formula. Figure 1 plots the median completion time in
+seconds across all runs.
+
+We also measure k=0 to establish a baseline for the overhead of encoding the
+problem, calling the SAT solver, etc. In aggregate, we ran our algorithm 105,000
+times which took 80 CPU hours on an Intel i7-7660U. We used Cadical 1.3.1 as the
+incremental solver and called it 6,000,000 times. \\
+
+\begin{figure}[htp]
 \begin{tikzpicture}
   \begin{axis}[
     height=6cm,
@@ -355,35 +367,52 @@ our algorithm, we omit it here for brevity.
     grid=major,
     xlabel=k (max flips),
     ylabel=completion time (s),
-    xmin=1, xmax=20,
+    xmin=0, xmax=20,
     ymin=0, ymax=3.5,
   ]
 
   \addplot coordinates {
-    (1, 0.551145807)
-    (2, 0.710333446)
-    (3, 0.860678624)
-    (4, 1.074558508)
-    (5, 1.242692629)
-    (6, 1.54847025)
-    (7, 1.853071101)
-    (8, 2.251641173)
-    (9, 2.565525581)
-    (10, 2.880892588)
-    (11, 3.175057635)
+    (0, 0.23613068)
+    (1, 0.514448288)
+    (2, 0.714127463)
+    (3, 0.861471642)
+    (4, 1.078018418)
+    (5, 1.244326101)
+    (6, 1.552850239)
+    (7, 1.845506096)
+    (8, 2.260462076)
+    (9, 2.558738066)
+    (10, 2.898591395)
+    (11, 3.187362312)
     (12, 3.343761958)
-    (13, 3.326617468)
+    (13, 3.330205619)
     (14, 3.20757239)
-    (15, 3.066155318)
+    (15, 3.066834229)
     (16, 2.958273301)
-    (17, 2.925144212)
-    (18, 2.685329885)
-    (19, 2.633794757)
-    (20, 2.519936371)
+    (17, 2.903730373)
+    (18, 2.681392024)
+    (19, 2.640207394)
+    (20, 2.536441681)
   };
   \end{axis}
 \end{tikzpicture}
-}
+\caption{The median completion time of our algorithm for different values of k}
+\end{figure}
+
+\noindent Clearly, the completion time is not growing exponentially in $k$ for
+this benchmark set. We speculate the decline in completion time after $k=12$ is
+due to the ‘k-flips’ constraint becoming insignificant with larger $k$, to the
+extent the SAT solver is infrequently running into conflict with those
+constraints. It's likely this benchmark set is too easy for the SAT solver and
+an interesting line of investigation would be to evaluate the algorithm on a
+more challenging set such as the SAT Competition instances.
+
+We also test the efficacy of k-flip local search on this benchmark
+set, irrespective of our algorithm. We measure how many clauses are satisfied
+when no k-flip improvement exists and the algorithm terminates. Table 1 plots
+a heatmap that counts the number of runs that could be improved no further past
+some number of clauses, up to a maximum of 430 which is when all clauses have
+been satisfied for problems in this benchmark set. \\
 
 \pgfplotstableset{
   every head row/.style={after row=\hline},
@@ -394,8 +423,6 @@ our algorithm, we omit it here for brevity.
       \pgfkeysalso{@cell content=\rule{0cm}{2.4ex}%
       \pgfmathsetmacro\y{min(100,max(0,abs(round(##1 * 0.04))))}%
       \edef\temp{\noexpand\cellcolor{blue!\y}}\temp%
-      \pgfmathtruncatemacro\x\y%
-      \ifnum\x>50 \color{white}\fi%
       ##1}%
     },
   }
@@ -424,8 +451,15 @@ x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 414 52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 413 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 412 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-411 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 }
-\caption{caption}
+\caption{
+  A heatmap that shows the number of runs terminating with different levels of
+  satisfied clauses
+}
 \end{table}
+
+\noindent Table 1 clearly shows that local search is an effective technique for
+solving SAT and MAX SAT problems. As we increase $k$, on average we are able to
+satisfy more clauses, in some cases satisfying all of them.
+
 \end{document}

@@ -23,6 +23,13 @@ pairs.sort_by { |_, t| t }.each do |path, created_at|
     n = numbers.first.to_i
     k = numbers.last.to_i
 
+    if previous
+      delta = created_at - previous
+      durations[k].push(delta)
+    end
+
+    previous = created_at
+
     if k == 0
       start_clauses.push(n)
       next
@@ -35,13 +42,6 @@ pairs.sort_by { |_, t| t }.each do |path, created_at|
 
     min_n = n if n < min_n
     max_n = n if n > max_n
-
-    if previous
-      delta = created_at - previous
-      durations[k].push(delta)
-    end
-
-    previous = created_at
   end
 end
 
@@ -64,7 +64,7 @@ average = start_clauses.sum.to_f / start_clauses.size
 puts "started from #{average} clauses on average"
 
 puts "\nmedian completion times for values of k: "
-min_k.upto(max_k) do |k|
+0.upto(max_k) do |k|
   median = durations[k].sort[durations[k].size / 2]
   puts "(#{k}, #{median})"
 end
