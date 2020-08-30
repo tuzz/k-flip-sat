@@ -276,6 +276,11 @@ by the $\textsc{lt}^*$ operator.
 
 \section{The algorithm}
 
+We make use of our encoding in a local search algorithm that tries to improve
+the number of satisfied clauses for some formula $F$. We start with a randomly
+generated truth assignment $A$ and make repeated calls to an IPASIR-compatible
+SAT solver to improve the candidate solution's quality on each iteration. \\
+
 \begin{algorithm}[H]
 \SetAlgoLined
 \DontPrintSemicolon
@@ -298,12 +303,12 @@ by the $\textsc{lt}^*$ operator.
     S.assume(A')\tcp*{The previous assumptions are dropped automatically.}
     \;
     u $\gets$ decode\_unsat\_clause\_count(T)\;
-    if u == 0 \{ break \}\tcp*{Check if all clauses are satisfied.}\;
     U $\gets$ encode\_unsat\_threshold(u)\tcp*{On the next iteration there must be fewer unsat clauses.}
     S.assume(U)\;
     \;
-    print(“k flips solution: ”, A')\;
+    print(“k-flips solution: ”, A')\;
     print(“clauses remaining: ”, u)\;
+    if u == 0 \{ break \}\tcp*{Break if all clauses are satisfied.}
  }
  \;
   \eIf{u == 0}{
@@ -314,7 +319,31 @@ by the $\textsc{lt}^*$ operator.
     return false
   }
  \caption{Our incremental k-flips local search algorithm}
-\end{algorithm}
+\end{algorithm} \vspace{5mm}
+
+\noindent While a solution exists, it means the SAT solver was able to find a
+k-flip improvement over $A$ which we decode as $A'$. We assume this new set of
+truth assignments for the next iteration of the algorithm. Additionally, we set
+a new threshold value for the number of unsatisfied clauses to ensure the
+solution quality improves each time. We do this by assuming a value equal to
+the current number of unsatisfied clauses.
+
+The algorithm terminates when either no solution exists, i.e. when no k-flip
+improvement exists, or when all clauses in $F$ have been satisfied. We return
+true or false to indicate this. We also print each k-flip solution and the
+number of unsatisfied clauses which we use for our analysis. Since our algorithm
+is solving the unweighted MAX SAT problem, the real implementation outputs in a
+format compliant with the SAT Competition[?].
+
+One small caveat is that the output of our program may incorrectly report an
+inflated number of unsatisfied clauses. This is due to our encoding in Section
+2.2 which does not preclude $U_i$ from being true when clause $i$ is already
+satisfied. In practice, the correct count can always be recovered by testing
+the candidate solution on $F$ and tighter bounds could be placed on $U$ in each
+iteration. Since this optimisation does not affect the overall correctness of
+our algorithm, we omit it here for brevity.
+
+\break
 
 \section{Empirical results}
 
