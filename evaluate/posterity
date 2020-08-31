@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+# Adds the timestamp to all the output files for posterity since git does not
+# track timestamps. The collate script will need to be updated based on the
+# filename instead of birthtime if you want to run the collate script again.
+
+Dir.glob("evaluate/measurements/*").map do |path|
+  timestamp =  File::Stat.new(path).birthtime.to_f
+
+  `mv #{path} #{path.sub(".txt", "-timestamp=#{timestamp}.txt")}`
+  print "."
+end
