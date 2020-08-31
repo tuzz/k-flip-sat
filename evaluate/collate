@@ -11,10 +11,12 @@ durations = Hash.new { |k, v| k[v] = [] }
 previous = nil
 
 pairs = Dir.glob("evaluate/measurements/*").map do |path|
-  [path, File::Stat.new(path).ctime]
+  [path, File::Stat.new(path).birthtime]
 end
 
-pairs.sort_by { |_, t| t }.each do |path, created_at|
+ordered = pairs.sort_by { |_, t| t }
+
+ordered.each do |path, created_at|
   File.read(path).lines.each do |line|
     next unless line.include?("clauses with k=")
 
@@ -68,3 +70,8 @@ puts "\nmedian completion times for values of k: "
   median = durations[k].sort[durations[k].size / 2]
   puts "(#{k}, #{median})"
 end
+
+cpu_seconds = ordered.last[1] - ordered.first[1]
+cpu_hours = cpu_seconds.to_f / 3600
+
+puts "\ntook #{cpu_hours} cpu hours"

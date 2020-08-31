@@ -362,8 +362,8 @@ median completion time in seconds across all runs.
 
 We also measure k=0 to establish a baseline for the overhead of encoding the
 problem, calling the SAT solver, etc. In aggregate, we ran our algorithm 105,000
-times which took 80 CPU hours on an Intel i7-7660U. We used Cadical 1.3.1 as the
-incremental solver\cite{biere2017cadical} and called it 6,000,000 times. \\
+times which took 89 CPU hours on an Intel i7-7660U. We used Cadical 1.3.1 as the
+incremental solver\cite{biere2017cadical} and called it 6,425,158 times. \\
 
 \begin{figure}[htp]
 \begin{tikzpicture}
@@ -378,27 +378,27 @@ incremental solver\cite{biere2017cadical} and called it 6,000,000 times. \\
   ]
 
   \addplot coordinates {
-    (0, 0.23613068)
-    (1, 0.514448288)
-    (2, 0.714127463)
-    (3, 0.861471642)
-    (4, 1.078018418)
-    (5, 1.244326101)
-    (6, 1.552850239)
-    (7, 1.845506096)
-    (8, 2.260462076)
-    (9, 2.558738066)
-    (10, 2.898591395)
-    (11, 3.187362312)
-    (12, 3.343761958)
-    (13, 3.330205619)
-    (14, 3.20757239)
-    (15, 3.066834229)
-    (16, 2.958273301)
-    (17, 2.903730373)
-    (18, 2.681392024)
-    (19, 2.640207394)
-    (20, 2.536441681)
+    (0, 0.244938581)
+    (1, 0.45781993)
+    (2, 0.653870068)
+    (3, 0.811580719)
+    (4, 1.015222406)
+    (5, 1.1929754)
+    (6, 1.444357627)
+    (7, 1.757201568)
+    (8, 2.097285819)
+    (9, 2.443762107)
+    (10, 2.808937273)
+    (11, 2.999201576)
+    (12, 3.21412904)
+    (13, 3.251149804)
+    (14, 3.132557922)
+    (15, 3.024002164)
+    (16, 2.925743144)
+    (17, 2.830784536)
+    (18, 2.684658108)
+    (19, 2.588953854)
+    (20, 2.472063779)
   };
   \end{axis}
 \end{tikzpicture}
@@ -406,9 +406,9 @@ incremental solver\cite{biere2017cadical} and called it 6,000,000 times. \\
 \end{figure}
 
 \noindent Clearly, the completion time is not growing exponentially in $k$ for
-this benchmark set. We speculate the decline in completion time after $k=12$ is
-due to the ‘k-flips’ constraint becoming insignificant with larger $k$, to the
-extent the SAT solver is infrequently running into conflict with those
+this benchmark set. We speculate the decline in completion time after $k=13$ is
+due to the ‘at most k-flips’ constraint becoming insignificant with larger $k$,
+to the extent the SAT solver is infrequently running into conflict with those
 constraints. It's likely this benchmark set is too easy for the SAT solver and
 an interesting line of investigation would be to evaluate the algorithm on a
 more challenging set such as the SAT Competition instances.
@@ -428,7 +428,7 @@ all clauses have been satisfied for problems in this benchmark set. \\
   color cells/.style={
     postproc cell content/.code={%
       \pgfkeysalso{@cell content=\rule{0cm}{2.4ex}%
-      \pgfmathsetmacro\y{min(100,max(0,abs(round(##1 * 0.04))))}%
+      \pgfmathsetmacro\y{min(100,max(0,abs(round(##1 * 0.02))))}%
       \edef\temp{\noexpand\cellcolor{blue!\y}}\temp%
       ##1}%
     },
@@ -436,28 +436,29 @@ all clauses have been satisfied for problems in this benchmark set. \\
 }
 
 \begin{table}[htp]
-\setlength\tabcolsep{4.5pt}
+\setlength\tabcolsep{3.8pt}
 \pgfplotstabletypeset[color cells, font=\footnotesize]{
 x 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
-430 0 4 24 49 117 193 283 389 484 635 739 843 985 1058 1154 1214 1343 1366 1461 1534
-429 3 27 112 281 429 580 756 834 913 964 979 1062 1026 1035 1019 974 914 937 861 789
-428 1 87 294 522 660 798 754 741 704 597 570 424 381 315 249 243 174 139 122 118
-427 12 202 462 641 621 543 459 345 284 201 139 109 52 38 26 18 19 7 6 9
-426 20 319 535 457 360 258 157 111 63 52 26 17 8 4 2 1 0 1 0 0
-425 66 448 463 269 182 61 34 29 5 6 2 0 1 0 0 0 0 0 0 0
-424 129 435 311 148 66 18 11 6 1 0 0 0 0 0 0 0 0 0 0 0
-423 215 379 143 59 13 2 1 0 1 0 0 0 0 0 0 0 0 0 0 0
-422 295 253 53 25 4 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-421 328 168 36 3 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-420 308 80 17 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-419 312 38 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-418 257 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-417 211 8 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-416 135 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-415 71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-414 52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-413 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-412 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+430 0 8 49 134 296 432 632 840 1032 1351 1542 1761 2077 2225 2444 2553 2752 2884 3043 3165
+429 3 64 237 583 876 1173 1528 1680 1855 1950 2021 2110 2058 2040 1993 1930 1835 1777 1667 1586
+428 6 183 603 1039 1349 1584 1510 1510 1414 1185 1098 902 733 642 501 475 378 320 273 235
+427 26 416 951 1267 1261 1109 888 698 547 411 289 194 118 88 58 41 35 17 17 14
+426 47 673 1082 965 739 500 337 215 129 88 44 31 13 5 4 1 0 1 0 0
+425 145 879 899 566 334 152 83 47 19 13 5 1 1 0 0 0 0 1 0 0
+424 273 851 625 278 112 42 21 10 3 2 0 1 0 0 0 0 0 0 0 0
+423 423 757 306 116 24 5 1 0 1 0 1 0 0 0 0 0 0 0 0 0
+422 555 521 133 44 6 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+421 685 343 82 7 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+420 669 184 25 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+419 642 81 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+418 517 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+417 394 15 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+416 252 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+415 172 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+414 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+413 59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+412 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+411 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 }
 \caption{
   A heatmap that shows the number of runs terminating with different levels of
