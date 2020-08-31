@@ -1,0 +1,80 @@
+c random assignment satisfied 176/430 clauses
+o 254
+c flipped 0/100 variables (k=0)
+c solution improved by 9 clauses
+o 245
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 237
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 236
+c flipped 0/100 variables (k=0)
+c solution improved by 59 clauses
+o 177
+c flipped 0/100 variables (k=0)
+c solution improved by 29 clauses
+o 148
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 132
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 131
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 127
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 126
+c flipped 0/100 variables (k=0)
+c solution improved by 7 clauses
+o 119
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 118
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 117
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 113
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 112
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 111
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 110
+c flipped 0/100 variables (k=0)
+c solution improved by 7 clauses
+o 103
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 101
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 100
+c flipped 0/100 variables (k=0)
+c solution improved by 33 clauses
+o 67
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 65
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 64
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 63
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 61
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 60
+v 1011001000000011100101101101111001011010011011110010001110101010011010110111000011001001001010100011
+c stuck at 370/430 clauses with k=0
+s UNKNOWN

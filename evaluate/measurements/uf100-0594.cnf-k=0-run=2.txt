@@ -1,0 +1,80 @@
+c random assignment satisfied 190/430 clauses
+o 240
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 224
+c flipped 0/100 variables (k=0)
+c solution improved by 65 clauses
+o 159
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 158
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 157
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 156
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 155
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 154
+c flipped 0/100 variables (k=0)
+c solution improved by 19 clauses
+o 135
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 127
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 119
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 115
+c flipped 0/100 variables (k=0)
+c solution improved by 28 clauses
+o 87
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 85
+c flipped 0/100 variables (k=0)
+c solution improved by 28 clauses
+o 57
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 56
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 54
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 52
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 51
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 49
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 48
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 47
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 46
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 43
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 39
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 38
+v 1010101111011101111111111001000101110111011101101100010001101111000011111101001111011010010000010111
+c stuck at 392/430 clauses with k=0
+s UNKNOWN

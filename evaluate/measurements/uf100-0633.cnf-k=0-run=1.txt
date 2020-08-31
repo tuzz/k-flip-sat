@@ -1,0 +1,41 @@
+c random assignment satisfied 127/430 clauses
+o 303
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 299
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 295
+c flipped 0/100 variables (k=0)
+c solution improved by 72 clauses
+o 223
+c flipped 0/100 variables (k=0)
+c solution improved by 17 clauses
+o 206
+c flipped 0/100 variables (k=0)
+c solution improved by 32 clauses
+o 174
+c flipped 0/100 variables (k=0)
+c solution improved by 63 clauses
+o 111
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 95
+c flipped 0/100 variables (k=0)
+c solution improved by 10 clauses
+o 85
+c flipped 0/100 variables (k=0)
+c solution improved by 22 clauses
+o 63
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 62
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 61
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 60
+v 0001001011101001100011010101001110110111101111111110100100011011101101111110011011111111011110011111
+c stuck at 370/430 clauses with k=0
+s UNKNOWN

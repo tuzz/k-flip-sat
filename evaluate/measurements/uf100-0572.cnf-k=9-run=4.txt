@@ -1,0 +1,104 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 9/100 variables (k=9)
+c solution improved by 145 clauses
+o 285
+c flipped 9/100 variables (k=9)
+c solution improved by 16 clauses
+o 269
+c flipped 8/100 variables (k=9)
+c solution improved by 53 clauses
+o 216
+c flipped 9/100 variables (k=9)
+c solution improved by 13 clauses
+o 203
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 199
+c flipped 9/100 variables (k=9)
+c solution improved by 37 clauses
+o 162
+c flipped 9/100 variables (k=9)
+c solution improved by 2 clauses
+o 160
+c flipped 9/100 variables (k=9)
+c solution improved by 99 clauses
+o 61
+c flipped 9/100 variables (k=9)
+c solution improved by 2 clauses
+o 59
+c flipped 9/100 variables (k=9)
+c solution improved by 2 clauses
+o 57
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 56
+c flipped 9/100 variables (k=9)
+c solution improved by 9 clauses
+o 47
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 46
+c flipped 9/100 variables (k=9)
+c solution improved by 16 clauses
+o 30
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 29
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 28
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 27
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 26
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 25
+c flipped 9/100 variables (k=9)
+c solution improved by 3 clauses
+o 22
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 21
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 20
+c flipped 9/100 variables (k=9)
+c solution improved by 3 clauses
+o 17
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 16
+c flipped 9/100 variables (k=9)
+c solution improved by 3 clauses
+o 13
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 12
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 11
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 10
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 6
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 5
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 4
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 3
+c flipped 8/100 variables (k=9)
+c solution improved by 1 clause
+o 2
+v 0101110010101101010000110011101111110101011100100101101001001000100010010101001001111110100100101110
+c stuck at 428/430 clauses with k=9
+s UNKNOWN

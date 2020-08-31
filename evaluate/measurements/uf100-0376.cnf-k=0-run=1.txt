@@ -1,0 +1,80 @@
+c random assignment satisfied 1/430 clauses
+o 429
+c flipped 0/100 variables (k=0)
+c solution improved by 158 clauses
+o 271
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 255
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 253
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 252
+c flipped 0/100 variables (k=0)
+c solution improved by 29 clauses
+o 223
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 215
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 214
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 210
+c flipped 0/100 variables (k=0)
+c solution improved by 40 clauses
+o 170
+c flipped 0/100 variables (k=0)
+c solution improved by 32 clauses
+o 138
+c flipped 0/100 variables (k=0)
+c solution improved by 52 clauses
+o 86
+c flipped 0/100 variables (k=0)
+c solution improved by 23 clauses
+o 63
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 62
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 61
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 60
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 58
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 56
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 55
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 54
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 53
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 52
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 50
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 42
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 39
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 38
+v 1001010100100100001010110110001000000101110000110011011101000101010101100010101101010000001101100101
+c stuck at 392/430 clauses with k=0
+s UNKNOWN

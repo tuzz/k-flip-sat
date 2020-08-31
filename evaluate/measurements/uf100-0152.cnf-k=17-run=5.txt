@@ -1,0 +1,161 @@
+c random assignment satisfied 3/430 clauses
+o 427
+c flipped 17/100 variables (k=17)
+c solution improved by 128 clauses
+o 299
+c flipped 17/100 variables (k=17)
+c solution improved by 8 clauses
+o 291
+c flipped 17/100 variables (k=17)
+c solution improved by 8 clauses
+o 283
+c flipped 17/100 variables (k=17)
+c solution improved by 105 clauses
+o 178
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 177
+c flipped 17/100 variables (k=17)
+c solution improved by 6 clauses
+o 171
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 170
+c flipped 17/100 variables (k=17)
+c solution improved by 27 clauses
+o 143
+c flipped 17/100 variables (k=17)
+c solution improved by 8 clauses
+o 135
+c flipped 17/100 variables (k=17)
+c solution improved by 27 clauses
+o 108
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 107
+c flipped 17/100 variables (k=17)
+c solution improved by 8 clauses
+o 99
+c flipped 17/100 variables (k=17)
+c solution improved by 4 clauses
+o 95
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 94
+c flipped 17/100 variables (k=17)
+c solution improved by 16 clauses
+o 78
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 77
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 76
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 75
+c flipped 16/100 variables (k=17)
+c solution improved by 7 clauses
+o 68
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 67
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 66
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 65
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 64
+c flipped 10/100 variables (k=17)
+c solution improved by 1 clause
+o 63
+c flipped 15/100 variables (k=17)
+c solution improved by 2 clauses
+o 61
+c flipped 17/100 variables (k=17)
+c solution improved by 2 clauses
+o 59
+c flipped 17/100 variables (k=17)
+c solution improved by 16 clauses
+o 43
+c flipped 17/100 variables (k=17)
+c solution improved by 3 clauses
+o 40
+c flipped 17/100 variables (k=17)
+c solution improved by 4 clauses
+o 36
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 35
+c flipped 17/100 variables (k=17)
+c solution improved by 2 clauses
+o 33
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 32
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 31
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 30
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 29
+c flipped 17/100 variables (k=17)
+c solution improved by 4 clauses
+o 25
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 24
+c flipped 17/100 variables (k=17)
+c solution improved by 5 clauses
+o 19
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 18
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 17
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 16
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 15
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 14
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 13
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 12
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 11
+c flipped 17/100 variables (k=17)
+c solution improved by 5 clauses
+o 6
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 5
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 4
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 3
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 2
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 1
+v 0100011100011110100100001111100011110010001000001101111011000011001111010001010111101111111111011010
+c stuck at 429/430 clauses with k=17
+s UNKNOWN

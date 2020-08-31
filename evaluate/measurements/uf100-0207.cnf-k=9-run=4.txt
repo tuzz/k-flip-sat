@@ -1,0 +1,176 @@
+c random assignment satisfied 6/430 clauses
+o 424
+c flipped 9/100 variables (k=9)
+c solution improved by 8 clauses
+o 416
+c flipped 9/100 variables (k=9)
+c solution improved by 161 clauses
+o 255
+c flipped 9/100 variables (k=9)
+c solution improved by 20 clauses
+o 235
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 234
+c flipped 9/100 variables (k=9)
+c solution improved by 33 clauses
+o 201
+c flipped 9/100 variables (k=9)
+c solution improved by 17 clauses
+o 184
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 180
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 176
+c flipped 9/100 variables (k=9)
+c solution improved by 8 clauses
+o 168
+c flipped 9/100 variables (k=9)
+c solution improved by 2 clauses
+o 166
+c flipped 9/100 variables (k=9)
+c solution improved by 2 clauses
+o 164
+c flipped 9/100 variables (k=9)
+c solution improved by 16 clauses
+o 148
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 144
+c flipped 9/100 variables (k=9)
+c solution improved by 17 clauses
+o 127
+c flipped 9/100 variables (k=9)
+c solution improved by 8 clauses
+o 119
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 115
+c flipped 9/100 variables (k=9)
+c solution improved by 20 clauses
+o 95
+c flipped 9/100 variables (k=9)
+c solution improved by 2 clauses
+o 93
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 92
+c flipped 9/100 variables (k=9)
+c solution improved by 5 clauses
+o 87
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 86
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 85
+c flipped 8/100 variables (k=9)
+c solution improved by 1 clause
+o 84
+c flipped 8/100 variables (k=9)
+c solution improved by 1 clause
+o 83
+c flipped 8/100 variables (k=9)
+c solution improved by 1 clause
+o 82
+c flipped 8/100 variables (k=9)
+c solution improved by 8 clauses
+o 74
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 73
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 69
+c flipped 9/100 variables (k=9)
+c solution improved by 8 clauses
+o 61
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 57
+c flipped 9/100 variables (k=9)
+c solution improved by 8 clauses
+o 49
+c flipped 9/100 variables (k=9)
+c solution improved by 8 clauses
+o 41
+c flipped 8/100 variables (k=9)
+c solution improved by 1 clause
+o 40
+c flipped 8/100 variables (k=9)
+c solution improved by 9 clauses
+o 31
+c flipped 8/100 variables (k=9)
+c solution improved by 4 clauses
+o 27
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 26
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 25
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 24
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 23
+c flipped 9/100 variables (k=9)
+c solution improved by 4 clauses
+o 19
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 18
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 17
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 16
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 15
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 14
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 13
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 12
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 11
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 10
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 9
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 8
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 7
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 6
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 5
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 4
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 3
+c flipped 9/100 variables (k=9)
+c solution improved by 1 clause
+o 2
+v 1001011001010101011001000000011111001100001100101000110101111111111000100000100100011000001010101111
+c stuck at 428/430 clauses with k=9
+s UNKNOWN

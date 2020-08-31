@@ -1,0 +1,86 @@
+c random assignment satisfied 176/430 clauses
+o 254
+c flipped 0/100 variables (k=0)
+c solution improved by 28 clauses
+o 226
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 225
+c flipped 0/100 variables (k=0)
+c solution improved by 31 clauses
+o 194
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 178
+c flipped 0/100 variables (k=0)
+c solution improved by 26 clauses
+o 152
+c flipped 0/100 variables (k=0)
+c solution improved by 9 clauses
+o 143
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 142
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 126
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 124
+c flipped 0/100 variables (k=0)
+c solution improved by 7 clauses
+o 117
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 116
+c flipped 0/100 variables (k=0)
+c solution improved by 18 clauses
+o 98
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 97
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 96
+c flipped 0/100 variables (k=0)
+c solution improved by 5 clauses
+o 91
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 89
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 88
+c flipped 0/100 variables (k=0)
+c solution improved by 6 clauses
+o 82
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 79
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 63
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 62
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 59
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 58
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 54
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 52
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 49
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 47
+v 0010000100011011000100111011011010100001101100111110110010110010011100100101010001101001011001010111
+c stuck at 383/430 clauses with k=0
+s UNKNOWN

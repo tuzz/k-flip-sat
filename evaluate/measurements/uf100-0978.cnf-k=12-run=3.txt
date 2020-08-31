@@ -1,0 +1,230 @@
+c random assignment satisfied 146/430 clauses
+o 284
+c flipped 12/100 variables (k=12)
+c solution improved by 4 clauses
+o 280
+c flipped 12/100 variables (k=12)
+c solution improved by 8 clauses
+o 272
+c flipped 12/100 variables (k=12)
+c solution improved by 60 clauses
+o 212
+c flipped 12/100 variables (k=12)
+c solution improved by 8 clauses
+o 204
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 203
+c flipped 12/100 variables (k=12)
+c solution improved by 8 clauses
+o 195
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 194
+c flipped 12/100 variables (k=12)
+c solution improved by 2 clauses
+o 192
+c flipped 12/100 variables (k=12)
+c solution improved by 14 clauses
+o 178
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 177
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 176
+c flipped 12/100 variables (k=12)
+c solution improved by 6 clauses
+o 170
+c flipped 12/100 variables (k=12)
+c solution improved by 11 clauses
+o 159
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 158
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 157
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 156
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 155
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 154
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 153
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 152
+c flipped 11/100 variables (k=12)
+c solution improved by 1 clause
+o 151
+c flipped 11/100 variables (k=12)
+c solution improved by 4 clauses
+o 147
+c flipped 11/100 variables (k=12)
+c solution improved by 1 clause
+o 146
+c flipped 11/100 variables (k=12)
+c solution improved by 2 clauses
+o 144
+c flipped 9/100 variables (k=12)
+c solution improved by 8 clauses
+o 136
+c flipped 9/100 variables (k=12)
+c solution improved by 4 clauses
+o 132
+c flipped 9/100 variables (k=12)
+c solution improved by 4 clauses
+o 128
+c flipped 12/100 variables (k=12)
+c solution improved by 25 clauses
+o 103
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 102
+c flipped 12/100 variables (k=12)
+c solution improved by 2 clauses
+o 100
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 99
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 98
+c flipped 12/100 variables (k=12)
+c solution improved by 12 clauses
+o 86
+c flipped 12/100 variables (k=12)
+c solution improved by 7 clauses
+o 79
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 78
+c flipped 12/100 variables (k=12)
+c solution improved by 2 clauses
+o 76
+c flipped 12/100 variables (k=12)
+c solution improved by 15 clauses
+o 61
+c flipped 12/100 variables (k=12)
+c solution improved by 3 clauses
+o 58
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 57
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 56
+c flipped 11/100 variables (k=12)
+c solution improved by 1 clause
+o 55
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 54
+c flipped 12/100 variables (k=12)
+c solution improved by 6 clauses
+o 48
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 47
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 46
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 45
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 44
+c flipped 12/100 variables (k=12)
+c solution improved by 5 clauses
+o 39
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 38
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 37
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 36
+c flipped 12/100 variables (k=12)
+c solution improved by 2 clauses
+o 34
+c flipped 12/100 variables (k=12)
+c solution improved by 5 clauses
+o 29
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 28
+c flipped 12/100 variables (k=12)
+c solution improved by 5 clauses
+o 23
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 22
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 21
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 20
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 19
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 18
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 17
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 16
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 15
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 14
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 13
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 12
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 11
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 10
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 9
+c flipped 12/100 variables (k=12)
+c solution improved by 2 clauses
+o 7
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 6
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 5
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 4
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 3
+c flipped 12/100 variables (k=12)
+c solution improved by 1 clause
+o 2
+v 0110010100111000011100111000101101001010110001010100011100000101010111110011101111001001000111111000
+c stuck at 428/430 clauses with k=12
+s UNKNOWN

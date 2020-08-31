@@ -1,0 +1,215 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 3/100 variables (k=3)
+c solution improved by 16 clauses
+o 414
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 413
+c flipped 3/100 variables (k=3)
+c solution improved by 172 clauses
+o 241
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 240
+c flipped 3/100 variables (k=3)
+c solution improved by 8 clauses
+o 232
+c flipped 3/100 variables (k=3)
+c solution improved by 17 clauses
+o 215
+c flipped 3/100 variables (k=3)
+c solution improved by 8 clauses
+o 207
+c flipped 3/100 variables (k=3)
+c solution improved by 4 clauses
+o 203
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 202
+c flipped 3/100 variables (k=3)
+c solution improved by 32 clauses
+o 170
+c flipped 3/100 variables (k=3)
+c solution improved by 15 clauses
+o 155
+c flipped 3/100 variables (k=3)
+c solution improved by 21 clauses
+o 134
+c flipped 3/100 variables (k=3)
+c solution improved by 16 clauses
+o 118
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 117
+c flipped 3/100 variables (k=3)
+c solution improved by 3 clauses
+o 114
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 113
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 112
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 111
+c flipped 3/100 variables (k=3)
+c solution improved by 4 clauses
+o 107
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 106
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 105
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 104
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 103
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 102
+c flipped 3/100 variables (k=3)
+c solution improved by 2 clauses
+o 100
+c flipped 3/100 variables (k=3)
+c solution improved by 4 clauses
+o 96
+c flipped 3/100 variables (k=3)
+c solution improved by 2 clauses
+o 94
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 93
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 92
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 91
+c flipped 3/100 variables (k=3)
+c solution improved by 5 clauses
+o 86
+c flipped 3/100 variables (k=3)
+c solution improved by 2 clauses
+o 84
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 83
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 82
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 81
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 80
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 79
+c flipped 3/100 variables (k=3)
+c solution improved by 6 clauses
+o 73
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 72
+c flipped 3/100 variables (k=3)
+c solution improved by 3 clauses
+o 69
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 68
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 67
+c flipped 3/100 variables (k=3)
+c solution improved by 16 clauses
+o 51
+c flipped 3/100 variables (k=3)
+c solution improved by 9 clauses
+o 42
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 41
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 40
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 39
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 38
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 37
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 36
+c flipped 3/100 variables (k=3)
+c solution improved by 3 clauses
+o 33
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 32
+c flipped 3/100 variables (k=3)
+c solution improved by 8 clauses
+o 24
+c flipped 3/100 variables (k=3)
+c solution improved by 2 clauses
+o 22
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 21
+c flipped 3/100 variables (k=3)
+c solution improved by 3 clauses
+o 18
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 17
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 16
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 15
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 14
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 13
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 12
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 11
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 10
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 9
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 8
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 7
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 6
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 5
+c flipped 3/100 variables (k=3)
+c solution improved by 1 clause
+o 4
+v 1001110010111110101111011111111110011111001101000010100101100110100011111000011011110010100101101101
+c stuck at 426/430 clauses with k=3
+s UNKNOWN

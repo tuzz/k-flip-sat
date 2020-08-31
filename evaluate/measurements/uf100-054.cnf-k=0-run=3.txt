@@ -1,0 +1,80 @@
+c random assignment satisfied 2/430 clauses
+o 428
+c flipped 0/100 variables (k=0)
+c solution improved by 157 clauses
+o 271
+c flipped 0/100 variables (k=0)
+c solution improved by 18 clauses
+o 253
+c flipped 0/100 variables (k=0)
+c solution improved by 68 clauses
+o 185
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 184
+c flipped 0/100 variables (k=0)
+c solution improved by 11 clauses
+o 173
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 165
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 164
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 162
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 154
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 150
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 148
+c flipped 0/100 variables (k=0)
+c solution improved by 7 clauses
+o 141
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 140
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 132
+c flipped 0/100 variables (k=0)
+c solution improved by 53 clauses
+o 79
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 78
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 74
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 73
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 72
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 64
+c flipped 0/100 variables (k=0)
+c solution improved by 7 clauses
+o 57
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 56
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 53
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 52
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 51
+v 0101011010001011110000001011010101110011000101110110111100001111001010101000010111001010111111101001
+c stuck at 379/430 clauses with k=0
+s UNKNOWN

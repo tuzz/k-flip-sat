@@ -1,0 +1,158 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 7/100 variables (k=7)
+c solution improved by 183 clauses
+o 247
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 246
+c flipped 7/100 variables (k=7)
+c solution improved by 36 clauses
+o 210
+c flipped 7/100 variables (k=7)
+c solution improved by 16 clauses
+o 194
+c flipped 7/100 variables (k=7)
+c solution improved by 16 clauses
+o 178
+c flipped 7/100 variables (k=7)
+c solution improved by 2 clauses
+o 176
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 175
+c flipped 7/100 variables (k=7)
+c solution improved by 3 clauses
+o 172
+c flipped 7/100 variables (k=7)
+c solution improved by 32 clauses
+o 140
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 139
+c flipped 7/100 variables (k=7)
+c solution improved by 8 clauses
+o 131
+c flipped 7/100 variables (k=7)
+c solution improved by 32 clauses
+o 99
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 98
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 97
+c flipped 7/100 variables (k=7)
+c solution improved by 15 clauses
+o 82
+c flipped 7/100 variables (k=7)
+c solution improved by 8 clauses
+o 74
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 73
+c flipped 6/100 variables (k=7)
+c solution improved by 8 clauses
+o 65
+c flipped 6/100 variables (k=7)
+c solution improved by 1 clause
+o 64
+c flipped 6/100 variables (k=7)
+c solution improved by 8 clauses
+o 56
+c flipped 6/100 variables (k=7)
+c solution improved by 1 clause
+o 55
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 54
+c flipped 7/100 variables (k=7)
+c solution improved by 8 clauses
+o 46
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 45
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 44
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 43
+c flipped 7/100 variables (k=7)
+c solution improved by 2 clauses
+o 41
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 40
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 39
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 38
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 37
+c flipped 7/100 variables (k=7)
+c solution improved by 8 clauses
+o 29
+c flipped 7/100 variables (k=7)
+c solution improved by 5 clauses
+o 24
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 23
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 22
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 21
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 20
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 19
+c flipped 7/100 variables (k=7)
+c solution improved by 2 clauses
+o 17
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 16
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 15
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 14
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 13
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 12
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 11
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 10
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 9
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 8
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 7
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 6
+c flipped 7/100 variables (k=7)
+c solution improved by 1 clause
+o 5
+v 0111100111010011001111001011101000111110111011101101010101000101110110010001100100100011100001000000
+c stuck at 425/430 clauses with k=7
+s UNKNOWN

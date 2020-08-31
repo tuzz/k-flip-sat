@@ -1,0 +1,158 @@
+c random assignment satisfied 144/430 clauses
+o 286
+c flipped 20/100 variables (k=20)
+c solution improved by 2 clauses
+o 284
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 280
+c flipped 20/100 variables (k=20)
+c solution improved by 8 clauses
+o 272
+c flipped 19/100 variables (k=20)
+c solution improved by 85 clauses
+o 187
+c flipped 20/100 variables (k=20)
+c solution improved by 13 clauses
+o 174
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 173
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 172
+c flipped 20/100 variables (k=20)
+c solution improved by 5 clauses
+o 167
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 163
+c flipped 20/100 variables (k=20)
+c solution improved by 32 clauses
+o 131
+c flipped 20/100 variables (k=20)
+c solution improved by 2 clauses
+o 129
+c flipped 20/100 variables (k=20)
+c solution improved by 12 clauses
+o 117
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 113
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 112
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 108
+c flipped 20/100 variables (k=20)
+c solution improved by 8 clauses
+o 100
+c flipped 20/100 variables (k=20)
+c solution improved by 5 clauses
+o 95
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 94
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 93
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 89
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 85
+c flipped 18/100 variables (k=20)
+c solution improved by 1 clause
+o 84
+c flipped 20/100 variables (k=20)
+c solution improved by 5 clauses
+o 79
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 78
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 74
+c flipped 20/100 variables (k=20)
+c solution improved by 2 clauses
+o 72
+c flipped 19/100 variables (k=20)
+c solution improved by 1 clause
+o 71
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 67
+c flipped 20/100 variables (k=20)
+c solution improved by 3 clauses
+o 64
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 60
+c flipped 20/100 variables (k=20)
+c solution improved by 12 clauses
+o 48
+c flipped 20/100 variables (k=20)
+c solution improved by 12 clauses
+o 36
+c flipped 20/100 variables (k=20)
+c solution improved by 5 clauses
+o 31
+c flipped 20/100 variables (k=20)
+c solution improved by 8 clauses
+o 23
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 22
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 21
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 20
+c flipped 20/100 variables (k=20)
+c solution improved by 2 clauses
+o 18
+c flipped 20/100 variables (k=20)
+c solution improved by 4 clauses
+o 14
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 13
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 12
+c flipped 20/100 variables (k=20)
+c solution improved by 2 clauses
+o 10
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 9
+c flipped 19/100 variables (k=20)
+c solution improved by 2 clauses
+o 7
+c flipped 19/100 variables (k=20)
+c solution improved by 1 clause
+o 6
+c flipped 18/100 variables (k=20)
+c solution improved by 1 clause
+o 5
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 4
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 3
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 2
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 1
+c flipped 20/100 variables (k=20)
+c solution improved by 1 clause
+o 0
+v 0110010000000100110110110011100101000111010100010000101011000000000011111001000100111101000010000110
+c completely solved all 430 clauses with k=20
+s OPTIMUM FOUND

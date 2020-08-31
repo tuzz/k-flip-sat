@@ -1,0 +1,185 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 15/100 variables (k=15)
+c solution improved by 120 clauses
+o 310
+c flipped 15/100 variables (k=15)
+c solution improved by 4 clauses
+o 306
+c flipped 15/100 variables (k=15)
+c solution improved by 106 clauses
+o 200
+c flipped 15/100 variables (k=15)
+c solution improved by 8 clauses
+o 192
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 191
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 190
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 189
+c flipped 15/100 variables (k=15)
+c solution improved by 6 clauses
+o 183
+c flipped 15/100 variables (k=15)
+c solution improved by 4 clauses
+o 179
+c flipped 15/100 variables (k=15)
+c solution improved by 44 clauses
+o 135
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 134
+c flipped 15/100 variables (k=15)
+c solution improved by 16 clauses
+o 118
+c flipped 15/100 variables (k=15)
+c solution improved by 16 clauses
+o 102
+c flipped 15/100 variables (k=15)
+c solution improved by 7 clauses
+o 95
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 94
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 92
+c flipped 15/100 variables (k=15)
+c solution improved by 16 clauses
+o 76
+c flipped 15/100 variables (k=15)
+c solution improved by 4 clauses
+o 72
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 71
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 70
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 68
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 66
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 64
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 63
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 62
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 61
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 60
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 59
+c flipped 15/100 variables (k=15)
+c solution improved by 16 clauses
+o 43
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 42
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 40
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 39
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 38
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 37
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 36
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 34
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 33
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 32
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 31
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 30
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 29
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 28
+c flipped 15/100 variables (k=15)
+c solution improved by 3 clauses
+o 25
+c flipped 14/100 variables (k=15)
+c solution improved by 1 clause
+o 24
+c flipped 14/100 variables (k=15)
+c solution improved by 1 clause
+o 23
+c flipped 14/100 variables (k=15)
+c solution improved by 1 clause
+o 22
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 20
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 18
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 17
+c flipped 15/100 variables (k=15)
+c solution improved by 4 clauses
+o 13
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 12
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 11
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 10
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 8
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 7
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 6
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 5
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 4
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 3
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 2
+v 1011110000101100011000110101111010000001000111001010011100111010100111001010101001110100110111010001
+c stuck at 428/430 clauses with k=15
+s UNKNOWN

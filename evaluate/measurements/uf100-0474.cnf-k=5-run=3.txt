@@ -1,0 +1,167 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 5/100 variables (k=5)
+c solution improved by 6 clauses
+o 424
+c flipped 5/100 variables (k=5)
+c solution improved by 61 clauses
+o 363
+c flipped 5/100 variables (k=5)
+c solution improved by 112 clauses
+o 251
+c flipped 5/100 variables (k=5)
+c solution improved by 7 clauses
+o 244
+c flipped 5/100 variables (k=5)
+c solution improved by 41 clauses
+o 203
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 199
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 195
+c flipped 5/100 variables (k=5)
+c solution improved by 3 clauses
+o 192
+c flipped 5/100 variables (k=5)
+c solution improved by 11 clauses
+o 181
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 180
+c flipped 5/100 variables (k=5)
+c solution improved by 3 clauses
+o 177
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 176
+c flipped 5/100 variables (k=5)
+c solution improved by 17 clauses
+o 159
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 155
+c flipped 5/100 variables (k=5)
+c solution improved by 12 clauses
+o 143
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 139
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 138
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 137
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 136
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 135
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 131
+c flipped 5/100 variables (k=5)
+c solution improved by 10 clauses
+o 121
+c flipped 5/100 variables (k=5)
+c solution improved by 5 clauses
+o 116
+c flipped 5/100 variables (k=5)
+c solution improved by 16 clauses
+o 100
+c flipped 5/100 variables (k=5)
+c solution improved by 17 clauses
+o 83
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 82
+c flipped 5/100 variables (k=5)
+c solution improved by 22 clauses
+o 60
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 59
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 57
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 56
+c flipped 5/100 variables (k=5)
+c solution improved by 9 clauses
+o 47
+c flipped 5/100 variables (k=5)
+c solution improved by 8 clauses
+o 39
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 38
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 37
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 36
+c flipped 5/100 variables (k=5)
+c solution improved by 5 clauses
+o 31
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 29
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 28
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 27
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 23
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 22
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 18
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 17
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 13
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 12
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 11
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 10
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 9
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 8
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 7
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 6
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 5
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 4
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 3
+v 1100011110010001111100110000011111000000101000101111011101010000110010010111011100001000100101111011
+c stuck at 427/430 clauses with k=5
+s UNKNOWN

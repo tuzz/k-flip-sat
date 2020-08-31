@@ -1,0 +1,161 @@
+c random assignment satisfied 3/430 clauses
+o 427
+c flipped 17/100 variables (k=17)
+c solution improved by 174 clauses
+o 253
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 252
+c flipped 7/100 variables (k=17)
+c solution improved by 69 clauses
+o 183
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 182
+c flipped 17/100 variables (k=17)
+c solution improved by 32 clauses
+o 150
+c flipped 17/100 variables (k=17)
+c solution improved by 39 clauses
+o 111
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 110
+c flipped 17/100 variables (k=17)
+c solution improved by 16 clauses
+o 94
+c flipped 17/100 variables (k=17)
+c solution improved by 15 clauses
+o 79
+c flipped 17/100 variables (k=17)
+c solution improved by 4 clauses
+o 75
+c flipped 17/100 variables (k=17)
+c solution improved by 2 clauses
+o 73
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 72
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 71
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 70
+c flipped 17/100 variables (k=17)
+c solution improved by 2 clauses
+o 68
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 67
+c flipped 17/100 variables (k=17)
+c solution improved by 2 clauses
+o 65
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 64
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 63
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 62
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 61
+c flipped 12/100 variables (k=17)
+c solution improved by 1 clause
+o 60
+c flipped 17/100 variables (k=17)
+c solution improved by 2 clauses
+o 58
+c flipped 17/100 variables (k=17)
+c solution improved by 7 clauses
+o 51
+c flipped 17/100 variables (k=17)
+c solution improved by 8 clauses
+o 43
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 42
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 41
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 40
+c flipped 17/100 variables (k=17)
+c solution improved by 9 clauses
+o 31
+c flipped 16/100 variables (k=17)
+c solution improved by 1 clause
+o 30
+c flipped 16/100 variables (k=17)
+c solution improved by 1 clause
+o 29
+c flipped 16/100 variables (k=17)
+c solution improved by 1 clause
+o 28
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 27
+c flipped 17/100 variables (k=17)
+c solution improved by 4 clauses
+o 23
+c flipped 17/100 variables (k=17)
+c solution improved by 6 clauses
+o 17
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 16
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 15
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 14
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 13
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 12
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 11
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 10
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 9
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 8
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 7
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 6
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 5
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 4
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 3
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 2
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 1
+c flipped 17/100 variables (k=17)
+c solution improved by 1 clause
+o 0
+v 0111001101011010010001001011001100111010101110111000100100001111100100010010000001101001000010111010
+c completely solved all 430 clauses with k=17
+s OPTIMUM FOUND

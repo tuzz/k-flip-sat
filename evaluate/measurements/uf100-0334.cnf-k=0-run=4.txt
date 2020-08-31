@@ -1,0 +1,80 @@
+c random assignment satisfied 178/430 clauses
+o 252
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 251
+c flipped 0/100 variables (k=0)
+c solution improved by 35 clauses
+o 216
+c flipped 0/100 variables (k=0)
+c solution improved by 32 clauses
+o 184
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 183
+c flipped 0/100 variables (k=0)
+c solution improved by 26 clauses
+o 157
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 156
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 155
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 154
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 153
+c flipped 0/100 variables (k=0)
+c solution improved by 24 clauses
+o 129
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 128
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 126
+c flipped 0/100 variables (k=0)
+c solution improved by 32 clauses
+o 94
+c flipped 0/100 variables (k=0)
+c solution improved by 14 clauses
+o 80
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 79
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 63
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 61
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 58
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 57
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 56
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 55
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 54
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 53
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 52
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 51
+v 0000001000110001110100111001000111100110100111010110101011101001111000110100001000010101000011101010
+c stuck at 379/430 clauses with k=0
+s UNKNOWN

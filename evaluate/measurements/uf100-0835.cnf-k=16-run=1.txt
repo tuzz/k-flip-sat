@@ -1,0 +1,161 @@
+c random assignment satisfied 3/430 clauses
+o 427
+c flipped 13/100 variables (k=16)
+c solution improved by 222 clauses
+o 205
+c flipped 15/100 variables (k=16)
+c solution improved by 12 clauses
+o 193
+c flipped 15/100 variables (k=16)
+c solution improved by 1 clause
+o 192
+c flipped 16/100 variables (k=16)
+c solution improved by 3 clauses
+o 189
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 181
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 180
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 176
+c flipped 16/100 variables (k=16)
+c solution improved by 50 clauses
+o 126
+c flipped 16/100 variables (k=16)
+c solution improved by 14 clauses
+o 112
+c flipped 16/100 variables (k=16)
+c solution improved by 16 clauses
+o 96
+c flipped 16/100 variables (k=16)
+c solution improved by 3 clauses
+o 93
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 92
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 91
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 90
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 82
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 81
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 77
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 69
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 68
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 67
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 66
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 58
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 50
+c flipped 16/100 variables (k=16)
+c solution improved by 3 clauses
+o 47
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 45
+c flipped 16/100 variables (k=16)
+c solution improved by 5 clauses
+o 40
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 39
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 31
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 29
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 28
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 27
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 23
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 22
+c flipped 15/100 variables (k=16)
+c solution improved by 1 clause
+o 21
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 20
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 19
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 18
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 17
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 16
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 15
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 14
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 13
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 11
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 10
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 9
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 8
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 7
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 6
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 5
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 4
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 3
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 2
+v 0000110000010101101101010001010101001000011101111111101001010110000111000100011100110000010101010010
+c stuck at 428/430 clauses with k=16
+s UNKNOWN

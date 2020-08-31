@@ -1,0 +1,161 @@
+c random assignment satisfied 176/430 clauses
+o 254
+c flipped 10/100 variables (k=10)
+c solution improved by 48 clauses
+o 206
+c flipped 10/100 variables (k=10)
+c solution improved by 64 clauses
+o 142
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 141
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 139
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 138
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 137
+c flipped 10/100 variables (k=10)
+c solution improved by 8 clauses
+o 129
+c flipped 10/100 variables (k=10)
+c solution improved by 6 clauses
+o 123
+c flipped 10/100 variables (k=10)
+c solution improved by 3 clauses
+o 120
+c flipped 10/100 variables (k=10)
+c solution improved by 16 clauses
+o 104
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 103
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 102
+c flipped 10/100 variables (k=10)
+c solution improved by 15 clauses
+o 87
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 86
+c flipped 10/100 variables (k=10)
+c solution improved by 14 clauses
+o 72
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 71
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 70
+c flipped 10/100 variables (k=10)
+c solution improved by 5 clauses
+o 65
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 64
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 63
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 61
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 60
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 58
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 56
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 55
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 54
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 53
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 51
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 49
+c flipped 10/100 variables (k=10)
+c solution improved by 5 clauses
+o 44
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 43
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 42
+c flipped 10/100 variables (k=10)
+c solution improved by 4 clauses
+o 38
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 36
+c flipped 7/100 variables (k=10)
+c solution improved by 7 clauses
+o 29
+c flipped 7/100 variables (k=10)
+c solution improved by 3 clauses
+o 26
+c flipped 10/100 variables (k=10)
+c solution improved by 3 clauses
+o 23
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 22
+c flipped 10/100 variables (k=10)
+c solution improved by 6 clauses
+o 16
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 15
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 14
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 13
+c flipped 10/100 variables (k=10)
+c solution improved by 2 clauses
+o 11
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 10
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 9
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 8
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 7
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 6
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 5
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 4
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 3
+c flipped 10/100 variables (k=10)
+c solution improved by 1 clause
+o 2
+v 1111000000101001000000010001000111111110100011100000101011010001010000101101001100010101011001111000
+c stuck at 428/430 clauses with k=10
+s UNKNOWN

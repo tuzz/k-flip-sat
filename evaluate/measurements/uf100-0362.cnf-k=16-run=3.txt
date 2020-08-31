@@ -1,0 +1,191 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 16/100 variables (k=16)
+c solution improved by 158 clauses
+o 272
+c flipped 16/100 variables (k=16)
+c solution improved by 58 clauses
+o 214
+c flipped 16/100 variables (k=16)
+c solution improved by 8 clauses
+o 206
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 204
+c flipped 12/100 variables (k=16)
+c solution improved by 13 clauses
+o 191
+c flipped 13/100 variables (k=16)
+c solution improved by 2 clauses
+o 189
+c flipped 13/100 variables (k=16)
+c solution improved by 5 clauses
+o 184
+c flipped 15/100 variables (k=16)
+c solution improved by 10 clauses
+o 174
+c flipped 15/100 variables (k=16)
+c solution improved by 8 clauses
+o 166
+c flipped 16/100 variables (k=16)
+c solution improved by 25 clauses
+o 141
+c flipped 15/100 variables (k=16)
+c solution improved by 1 clause
+o 140
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 139
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 135
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 131
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 130
+c flipped 16/100 variables (k=16)
+c solution improved by 14 clauses
+o 116
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 115
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 111
+c flipped 16/100 variables (k=16)
+c solution improved by 16 clauses
+o 95
+c flipped 16/100 variables (k=16)
+c solution improved by 20 clauses
+o 75
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 74
+c flipped 16/100 variables (k=16)
+c solution improved by 15 clauses
+o 59
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 58
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 57
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 56
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 55
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 54
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 53
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 52
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 51
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 49
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 48
+c flipped 15/100 variables (k=16)
+c solution improved by 3 clauses
+o 45
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 44
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 40
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 38
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 36
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 32
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 31
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 30
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 29
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 28
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 27
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 26
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 25
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 24
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 23
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 22
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 21
+c flipped 16/100 variables (k=16)
+c solution improved by 4 clauses
+o 17
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 16
+c flipped 15/100 variables (k=16)
+c solution improved by 1 clause
+o 15
+c flipped 15/100 variables (k=16)
+c solution improved by 1 clause
+o 14
+c flipped 16/100 variables (k=16)
+c solution improved by 2 clauses
+o 12
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 11
+c flipped 16/100 variables (k=16)
+c solution improved by 3 clauses
+o 8
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 7
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 6
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 5
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 4
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 3
+c flipped 16/100 variables (k=16)
+c solution improved by 1 clause
+o 2
+v 0110110000110111100100011000000100010110101100101110100001010111011101100001110110001010111101111110
+c stuck at 428/430 clauses with k=16
+s UNKNOWN

@@ -1,0 +1,200 @@
+c random assignment satisfied 178/430 clauses
+o 252
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 251
+c flipped 6/100 variables (k=6)
+c solution improved by 16 clauses
+o 235
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 233
+c flipped 5/100 variables (k=6)
+c solution improved by 6 clauses
+o 227
+c flipped 5/100 variables (k=6)
+c solution improved by 16 clauses
+o 211
+c flipped 5/100 variables (k=6)
+c solution improved by 1 clause
+o 210
+c flipped 5/100 variables (k=6)
+c solution improved by 2 clauses
+o 208
+c flipped 5/100 variables (k=6)
+c solution improved by 51 clauses
+o 157
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 156
+c flipped 6/100 variables (k=6)
+c solution improved by 18 clauses
+o 138
+c flipped 6/100 variables (k=6)
+c solution improved by 4 clauses
+o 134
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 133
+c flipped 6/100 variables (k=6)
+c solution improved by 5 clauses
+o 128
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 126
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 125
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 124
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 123
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 122
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 121
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 120
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 118
+c flipped 6/100 variables (k=6)
+c solution improved by 3 clauses
+o 115
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 114
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 113
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 112
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 111
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 110
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 109
+c flipped 6/100 variables (k=6)
+c solution improved by 7 clauses
+o 102
+c flipped 6/100 variables (k=6)
+c solution improved by 16 clauses
+o 86
+c flipped 6/100 variables (k=6)
+c solution improved by 5 clauses
+o 81
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 79
+c flipped 6/100 variables (k=6)
+c solution improved by 15 clauses
+o 64
+c flipped 6/100 variables (k=6)
+c solution improved by 16 clauses
+o 48
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 47
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 46
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 44
+c flipped 6/100 variables (k=6)
+c solution improved by 5 clauses
+o 39
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 38
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 37
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 35
+c flipped 6/100 variables (k=6)
+c solution improved by 3 clauses
+o 32
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 31
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 30
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 29
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 28
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 27
+c flipped 6/100 variables (k=6)
+c solution improved by 3 clauses
+o 24
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 23
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 22
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 21
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 19
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 18
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 17
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 16
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 15
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 14
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 13
+c flipped 6/100 variables (k=6)
+c solution improved by 2 clauses
+o 11
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 10
+c flipped 6/100 variables (k=6)
+c solution improved by 3 clauses
+o 7
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 6
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 5
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 4
+c flipped 6/100 variables (k=6)
+c solution improved by 1 clause
+o 3
+v 1110001101011010010110010000100101111010011011111001100100101001010000100111101111011001110000001111
+c stuck at 427/430 clauses with k=6
+s UNKNOWN

@@ -1,0 +1,182 @@
+c random assignment satisfied 90/430 clauses
+o 340
+c flipped 4/100 variables (k=4)
+c solution improved by 8 clauses
+o 332
+c flipped 4/100 variables (k=4)
+c solution improved by 89 clauses
+o 243
+c flipped 4/100 variables (k=4)
+c solution improved by 32 clauses
+o 211
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 210
+c flipped 4/100 variables (k=4)
+c solution improved by 46 clauses
+o 164
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 163
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 162
+c flipped 4/100 variables (k=4)
+c solution improved by 16 clauses
+o 146
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 145
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 144
+c flipped 4/100 variables (k=4)
+c solution improved by 8 clauses
+o 136
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 135
+c flipped 4/100 variables (k=4)
+c solution improved by 9 clauses
+o 126
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 125
+c flipped 4/100 variables (k=4)
+c solution improved by 15 clauses
+o 110
+c flipped 4/100 variables (k=4)
+c solution improved by 7 clauses
+o 103
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 102
+c flipped 4/100 variables (k=4)
+c solution improved by 7 clauses
+o 95
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 94
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 93
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 92
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 90
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 89
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 88
+c flipped 4/100 variables (k=4)
+c solution improved by 15 clauses
+o 73
+c flipped 4/100 variables (k=4)
+c solution improved by 8 clauses
+o 65
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 64
+c flipped 4/100 variables (k=4)
+c solution improved by 9 clauses
+o 55
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 53
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 52
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 51
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 49
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 48
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 47
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 46
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 45
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 44
+c flipped 4/100 variables (k=4)
+c solution improved by 7 clauses
+o 37
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 36
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 35
+c flipped 4/100 variables (k=4)
+c solution improved by 8 clauses
+o 27
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 26
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 25
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 24
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 22
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 20
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 18
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 17
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 16
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 15
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 14
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 13
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 12
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 11
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 10
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 9
+c flipped 4/100 variables (k=4)
+c solution improved by 2 clauses
+o 7
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 6
+c flipped 4/100 variables (k=4)
+c solution improved by 1 clause
+o 5
+v 1000100110001010111100000110110011110000100001101111111110110100101111010110100100001110011101100101
+c stuck at 425/430 clauses with k=4
+s UNKNOWN

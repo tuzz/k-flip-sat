@@ -1,0 +1,161 @@
+c random assignment satisfied 2/430 clauses
+o 428
+c flipped 18/100 variables (k=18)
+c solution improved by 32 clauses
+o 396
+c flipped 18/100 variables (k=18)
+c solution improved by 158 clauses
+o 238
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 237
+c flipped 18/100 variables (k=18)
+c solution improved by 45 clauses
+o 192
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 191
+c flipped 18/100 variables (k=18)
+c solution improved by 18 clauses
+o 173
+c flipped 18/100 variables (k=18)
+c solution improved by 7 clauses
+o 166
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 165
+c flipped 18/100 variables (k=18)
+c solution improved by 15 clauses
+o 150
+c flipped 11/100 variables (k=18)
+c solution improved by 7 clauses
+o 143
+c flipped 11/100 variables (k=18)
+c solution improved by 1 clause
+o 142
+c flipped 18/100 variables (k=18)
+c solution improved by 13 clauses
+o 129
+c flipped 18/100 variables (k=18)
+c solution improved by 8 clauses
+o 121
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 120
+c flipped 18/100 variables (k=18)
+c solution improved by 16 clauses
+o 104
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 103
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 102
+c flipped 18/100 variables (k=18)
+c solution improved by 6 clauses
+o 96
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 94
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 93
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 92
+c flipped 17/100 variables (k=18)
+c solution improved by 4 clauses
+o 88
+c flipped 17/100 variables (k=18)
+c solution improved by 13 clauses
+o 75
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 74
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 72
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 71
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 70
+c flipped 17/100 variables (k=18)
+c solution improved by 1 clause
+o 69
+c flipped 17/100 variables (k=18)
+c solution improved by 1 clause
+o 68
+c flipped 17/100 variables (k=18)
+c solution improved by 1 clause
+o 67
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 66
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 65
+c flipped 18/100 variables (k=18)
+c solution improved by 10 clauses
+o 55
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 54
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 52
+c flipped 18/100 variables (k=18)
+c solution improved by 5 clauses
+o 47
+c flipped 18/100 variables (k=18)
+c solution improved by 8 clauses
+o 39
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 38
+c flipped 17/100 variables (k=18)
+c solution improved by 1 clause
+o 37
+c flipped 17/100 variables (k=18)
+c solution improved by 20 clauses
+o 17
+c flipped 17/100 variables (k=18)
+c solution improved by 4 clauses
+o 13
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 12
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 11
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 10
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 9
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 8
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 7
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 6
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 5
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 4
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 3
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 2
+v 1110100111011100101010000110011001001101000100101011000000111001011010010100110010100000000000000001
+c stuck at 428/430 clauses with k=18
+s UNKNOWN

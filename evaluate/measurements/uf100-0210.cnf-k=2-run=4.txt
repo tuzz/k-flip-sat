@@ -1,0 +1,173 @@
+c random assignment satisfied 1/430 clauses
+o 429
+c flipped 2/100 variables (k=2)
+c solution improved by 149 clauses
+o 280
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 279
+c flipped 2/100 variables (k=2)
+c solution improved by 4 clauses
+o 275
+c flipped 2/100 variables (k=2)
+c solution improved by 17 clauses
+o 258
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 256
+c flipped 2/100 variables (k=2)
+c solution improved by 28 clauses
+o 228
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 227
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 226
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 225
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 224
+c flipped 2/100 variables (k=2)
+c solution improved by 19 clauses
+o 205
+c flipped 2/100 variables (k=2)
+c solution improved by 69 clauses
+o 136
+c flipped 2/100 variables (k=2)
+c solution improved by 9 clauses
+o 127
+c flipped 2/100 variables (k=2)
+c solution improved by 16 clauses
+o 111
+c flipped 2/100 variables (k=2)
+c solution improved by 4 clauses
+o 107
+c flipped 2/100 variables (k=2)
+c solution improved by 4 clauses
+o 103
+c flipped 2/100 variables (k=2)
+c solution improved by 4 clauses
+o 99
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 97
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 96
+c flipped 2/100 variables (k=2)
+c solution improved by 12 clauses
+o 84
+c flipped 2/100 variables (k=2)
+c solution improved by 5 clauses
+o 79
+c flipped 2/100 variables (k=2)
+c solution improved by 8 clauses
+o 71
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 70
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 69
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 67
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 65
+c flipped 2/100 variables (k=2)
+c solution improved by 3 clauses
+o 62
+c flipped 2/100 variables (k=2)
+c solution improved by 16 clauses
+o 46
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 44
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 43
+c flipped 2/100 variables (k=2)
+c solution improved by 3 clauses
+o 40
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 39
+c flipped 2/100 variables (k=2)
+c solution improved by 4 clauses
+o 35
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 34
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 33
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 32
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 31
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 29
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 28
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 27
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 26
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 25
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 24
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 23
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 22
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 21
+c flipped 2/100 variables (k=2)
+c solution improved by 2 clauses
+o 19
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 18
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 17
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 16
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 15
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 14
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 13
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 12
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 11
+c flipped 2/100 variables (k=2)
+c solution improved by 1 clause
+o 10
+v 1110111001011100100100010101110111001111000111001011001111101111110010100000100110000110101000111001
+c stuck at 420/430 clauses with k=2
+s UNKNOWN

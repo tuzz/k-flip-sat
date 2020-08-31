@@ -1,0 +1,80 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 422
+c flipped 0/100 variables (k=0)
+c solution improved by 162 clauses
+o 260
+c flipped 0/100 variables (k=0)
+c solution improved by 60 clauses
+o 200
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 196
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 195
+c flipped 0/100 variables (k=0)
+c solution improved by 15 clauses
+o 180
+c flipped 0/100 variables (k=0)
+c solution improved by 65 clauses
+o 115
+c flipped 0/100 variables (k=0)
+c solution improved by 5 clauses
+o 110
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 109
+c flipped 0/100 variables (k=0)
+c solution improved by 17 clauses
+o 92
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 91
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 87
+c flipped 0/100 variables (k=0)
+c solution improved by 28 clauses
+o 59
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 51
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 49
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 48
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 47
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 46
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 45
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 44
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 43
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 42
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 41
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 39
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 38
+v 1010111000101011011111011001010111110001101101100010110000011000111100000010111010011010100100111001
+c stuck at 392/430 clauses with k=0
+s UNKNOWN

@@ -1,0 +1,194 @@
+c random assignment satisfied 2/430 clauses
+o 428
+c flipped 5/100 variables (k=5)
+c solution improved by 150 clauses
+o 278
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 274
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 273
+c flipped 5/100 variables (k=5)
+c solution improved by 37 clauses
+o 236
+c flipped 5/100 variables (k=5)
+c solution improved by 11 clauses
+o 225
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 224
+c flipped 5/100 variables (k=5)
+c solution improved by 28 clauses
+o 196
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 195
+c flipped 5/100 variables (k=5)
+c solution improved by 3 clauses
+o 192
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 190
+c flipped 5/100 variables (k=5)
+c solution improved by 6 clauses
+o 184
+c flipped 5/100 variables (k=5)
+c solution improved by 6 clauses
+o 178
+c flipped 4/100 variables (k=5)
+c solution improved by 1 clause
+o 177
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 175
+c flipped 4/100 variables (k=5)
+c solution improved by 19 clauses
+o 156
+c flipped 4/100 variables (k=5)
+c solution improved by 1 clause
+o 155
+c flipped 4/100 variables (k=5)
+c solution improved by 2 clauses
+o 153
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 152
+c flipped 5/100 variables (k=5)
+c solution improved by 8 clauses
+o 144
+c flipped 4/100 variables (k=5)
+c solution improved by 6 clauses
+o 138
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 137
+c flipped 5/100 variables (k=5)
+c solution improved by 7 clauses
+o 130
+c flipped 5/100 variables (k=5)
+c solution improved by 3 clauses
+o 127
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 126
+c flipped 5/100 variables (k=5)
+c solution improved by 8 clauses
+o 118
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 117
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 116
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 112
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 111
+c flipped 5/100 variables (k=5)
+c solution improved by 32 clauses
+o 79
+c flipped 5/100 variables (k=5)
+c solution improved by 4 clauses
+o 75
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 73
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 72
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 71
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 70
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 69
+c flipped 5/100 variables (k=5)
+c solution improved by 3 clauses
+o 66
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 64
+c flipped 5/100 variables (k=5)
+c solution improved by 22 clauses
+o 42
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 40
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 39
+c flipped 5/100 variables (k=5)
+c solution improved by 8 clauses
+o 31
+c flipped 4/100 variables (k=5)
+c solution improved by 1 clause
+o 30
+c flipped 4/100 variables (k=5)
+c solution improved by 1 clause
+o 29
+c flipped 5/100 variables (k=5)
+c solution improved by 7 clauses
+o 22
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 21
+c flipped 5/100 variables (k=5)
+c solution improved by 2 clauses
+o 19
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 18
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 17
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 16
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 15
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 14
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 13
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 12
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 11
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 10
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 9
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 8
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 7
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 6
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 5
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 4
+c flipped 5/100 variables (k=5)
+c solution improved by 1 clause
+o 3
+v 1101010000011101000001111001111011100001111011111100010010010000010001100101011000000101010011011000
+c stuck at 427/430 clauses with k=5
+s UNKNOWN

@@ -1,0 +1,203 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 8/100 variables (k=8)
+c solution improved by 16 clauses
+o 414
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 412
+c flipped 8/100 variables (k=8)
+c solution improved by 94 clauses
+o 318
+c flipped 8/100 variables (k=8)
+c solution improved by 47 clauses
+o 271
+c flipped 8/100 variables (k=8)
+c solution improved by 3 clauses
+o 268
+c flipped 8/100 variables (k=8)
+c solution improved by 17 clauses
+o 251
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 249
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 248
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 247
+c flipped 8/100 variables (k=8)
+c solution improved by 16 clauses
+o 231
+c flipped 8/100 variables (k=8)
+c solution improved by 4 clauses
+o 227
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 226
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 224
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 222
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 220
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 219
+c flipped 8/100 variables (k=8)
+c solution improved by 4 clauses
+o 215
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 213
+c flipped 8/100 variables (k=8)
+c solution improved by 28 clauses
+o 185
+c flipped 8/100 variables (k=8)
+c solution improved by 9 clauses
+o 176
+c flipped 8/100 variables (k=8)
+c solution improved by 8 clauses
+o 168
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 167
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 166
+c flipped 8/100 variables (k=8)
+c solution improved by 12 clauses
+o 154
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 153
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 152
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 151
+c flipped 8/100 variables (k=8)
+c solution improved by 32 clauses
+o 119
+c flipped 8/100 variables (k=8)
+c solution improved by 6 clauses
+o 113
+c flipped 8/100 variables (k=8)
+c solution improved by 32 clauses
+o 81
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 79
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 78
+c flipped 8/100 variables (k=8)
+c solution improved by 8 clauses
+o 70
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 69
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 68
+c flipped 8/100 variables (k=8)
+c solution improved by 6 clauses
+o 62
+c flipped 8/100 variables (k=8)
+c solution improved by 24 clauses
+o 38
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 37
+c flipped 7/100 variables (k=8)
+c solution improved by 2 clauses
+o 35
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 33
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 31
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 30
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 28
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 26
+c flipped 8/100 variables (k=8)
+c solution improved by 2 clauses
+o 24
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 23
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 22
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 21
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 20
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 19
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 18
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 17
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 16
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 15
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 14
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 13
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 12
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 11
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 10
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 9
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 8
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 7
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 6
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 5
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 4
+c flipped 8/100 variables (k=8)
+c solution improved by 1 clause
+o 3
+v 0000001000000110010110010010101000111011001000010010000001101100001111001010100010000111000000000000
+c stuck at 427/430 clauses with k=8
+s UNKNOWN

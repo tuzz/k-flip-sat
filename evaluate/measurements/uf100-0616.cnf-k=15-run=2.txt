@@ -1,0 +1,161 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 429
+c flipped 15/100 variables (k=15)
+c solution improved by 8 clauses
+o 421
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 420
+c flipped 15/100 variables (k=15)
+c solution improved by 181 clauses
+o 239
+c flipped 15/100 variables (k=15)
+c solution improved by 4 clauses
+o 235
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 234
+c flipped 15/100 variables (k=15)
+c solution improved by 47 clauses
+o 187
+c flipped 15/100 variables (k=15)
+c solution improved by 7 clauses
+o 180
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 179
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 178
+c flipped 15/100 variables (k=15)
+c solution improved by 16 clauses
+o 162
+c flipped 15/100 variables (k=15)
+c solution improved by 25 clauses
+o 137
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 135
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 133
+c flipped 15/100 variables (k=15)
+c solution improved by 5 clauses
+o 128
+c flipped 12/100 variables (k=15)
+c solution improved by 1 clause
+o 127
+c flipped 12/100 variables (k=15)
+c solution improved by 4 clauses
+o 123
+c flipped 14/100 variables (k=15)
+c solution improved by 1 clause
+o 122
+c flipped 14/100 variables (k=15)
+c solution improved by 5 clauses
+o 117
+c flipped 14/100 variables (k=15)
+c solution improved by 22 clauses
+o 95
+c flipped 14/100 variables (k=15)
+c solution improved by 1 clause
+o 94
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 93
+c flipped 15/100 variables (k=15)
+c solution improved by 14 clauses
+o 79
+c flipped 15/100 variables (k=15)
+c solution improved by 3 clauses
+o 76
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 75
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 73
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 72
+c flipped 15/100 variables (k=15)
+c solution improved by 32 clauses
+o 40
+c flipped 15/100 variables (k=15)
+c solution improved by 6 clauses
+o 34
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 33
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 31
+c flipped 15/100 variables (k=15)
+c solution improved by 5 clauses
+o 26
+c flipped 15/100 variables (k=15)
+c solution improved by 2 clauses
+o 24
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 23
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 22
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 21
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 20
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 19
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 18
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 17
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 16
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 15
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 14
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 13
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 12
+c flipped 14/100 variables (k=15)
+c solution improved by 1 clause
+o 11
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 10
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 9
+c flipped 15/100 variables (k=15)
+c solution improved by 4 clauses
+o 5
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 4
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 3
+c flipped 15/100 variables (k=15)
+c solution improved by 1 clause
+o 2
+v 0111100001111001010101011011000010001000100100100111011011111110111001111010001001100101000100001100
+c stuck at 428/430 clauses with k=15
+s UNKNOWN

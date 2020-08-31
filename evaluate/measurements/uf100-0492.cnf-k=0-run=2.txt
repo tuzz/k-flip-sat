@@ -1,0 +1,101 @@
+c random assignment satisfied 1/430 clauses
+o 429
+c flipped 0/100 variables (k=0)
+c solution improved by 81 clauses
+o 348
+c flipped 0/100 variables (k=0)
+c solution improved by 81 clauses
+o 267
+c flipped 0/100 variables (k=0)
+c solution improved by 15 clauses
+o 252
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 248
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 244
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 240
+c flipped 0/100 variables (k=0)
+c solution improved by 12 clauses
+o 228
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 227
+c flipped 0/100 variables (k=0)
+c solution improved by 21 clauses
+o 206
+c flipped 0/100 variables (k=0)
+c solution improved by 15 clauses
+o 191
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 190
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 174
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 172
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 168
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 167
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 163
+c flipped 0/100 variables (k=0)
+c solution improved by 4 clauses
+o 159
+c flipped 0/100 variables (k=0)
+c solution improved by 8 clauses
+o 151
+c flipped 0/100 variables (k=0)
+c solution improved by 21 clauses
+o 130
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 129
+c flipped 0/100 variables (k=0)
+c solution improved by 13 clauses
+o 116
+c flipped 0/100 variables (k=0)
+c solution improved by 3 clauses
+o 113
+c flipped 0/100 variables (k=0)
+c solution improved by 9 clauses
+o 104
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 102
+c flipped 0/100 variables (k=0)
+c solution improved by 2 clauses
+o 100
+c flipped 0/100 variables (k=0)
+c solution improved by 16 clauses
+o 84
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 83
+c flipped 0/100 variables (k=0)
+c solution improved by 7 clauses
+o 76
+c flipped 0/100 variables (k=0)
+c solution improved by 13 clauses
+o 63
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 62
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 61
+c flipped 0/100 variables (k=0)
+c solution improved by 1 clause
+o 60
+v 0000100010110000010001100100101011000101000001010110101010101011101100111101001000010100111100100001
+c stuck at 370/430 clauses with k=0
+s UNKNOWN

@@ -1,0 +1,134 @@
+c random assignment satisfied 0/430 clauses
+o 430
+c flipped 10/100 variables (k=11)
+c solution improved by 202 clauses
+o 228
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 227
+c flipped 11/100 variables (k=11)
+c solution improved by 52 clauses
+o 175
+c flipped 11/100 variables (k=11)
+c solution improved by 8 clauses
+o 167
+c flipped 11/100 variables (k=11)
+c solution improved by 16 clauses
+o 151
+c flipped 11/100 variables (k=11)
+c solution improved by 2 clauses
+o 149
+c flipped 11/100 variables (k=11)
+c solution improved by 16 clauses
+o 133
+c flipped 11/100 variables (k=11)
+c solution improved by 4 clauses
+o 129
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 128
+c flipped 10/100 variables (k=11)
+c solution improved by 8 clauses
+o 120
+c flipped 10/100 variables (k=11)
+c solution improved by 3 clauses
+o 117
+c flipped 11/100 variables (k=11)
+c solution improved by 6 clauses
+o 111
+c flipped 11/100 variables (k=11)
+c solution improved by 8 clauses
+o 103
+c flipped 11/100 variables (k=11)
+c solution improved by 17 clauses
+o 86
+c flipped 11/100 variables (k=11)
+c solution improved by 4 clauses
+o 82
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 81
+c flipped 11/100 variables (k=11)
+c solution improved by 7 clauses
+o 74
+c flipped 11/100 variables (k=11)
+c solution improved by 12 clauses
+o 62
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 61
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 60
+c flipped 11/100 variables (k=11)
+c solution improved by 2 clauses
+o 58
+c flipped 11/100 variables (k=11)
+c solution improved by 12 clauses
+o 46
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 45
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 44
+c flipped 11/100 variables (k=11)
+c solution improved by 2 clauses
+o 42
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 41
+c flipped 11/100 variables (k=11)
+c solution improved by 12 clauses
+o 29
+c flipped 11/100 variables (k=11)
+c solution improved by 7 clauses
+o 22
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 21
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 20
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 19
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 18
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 17
+c flipped 11/100 variables (k=11)
+c solution improved by 4 clauses
+o 13
+c flipped 11/100 variables (k=11)
+c solution improved by 3 clauses
+o 10
+c flipped 10/100 variables (k=11)
+c solution improved by 1 clause
+o 9
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 8
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 7
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 6
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 5
+c flipped 11/100 variables (k=11)
+c solution improved by 3 clauses
+o 2
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 1
+c flipped 11/100 variables (k=11)
+c solution improved by 1 clause
+o 0
+v 1001000000001110111111110100111010000111000000111000010011011111101011101000010100001111011011111000
+c completely solved all 430 clauses with k=11
+s OPTIMUM FOUND

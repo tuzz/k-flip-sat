@@ -1,0 +1,167 @@
+c random assignment satisfied 3/430 clauses
+o 427
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 426
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 425
+c flipped 18/100 variables (k=18)
+c solution improved by 8 clauses
+o 417
+c flipped 10/100 variables (k=18)
+c solution improved by 28 clauses
+o 389
+c flipped 15/100 variables (k=18)
+c solution improved by 113 clauses
+o 276
+c flipped 11/100 variables (k=18)
+c solution improved by 61 clauses
+o 215
+c flipped 11/100 variables (k=18)
+c solution improved by 1 clause
+o 214
+c flipped 15/100 variables (k=18)
+c solution improved by 72 clauses
+o 142
+c flipped 15/100 variables (k=18)
+c solution improved by 1 clause
+o 141
+c flipped 18/100 variables (k=18)
+c solution improved by 9 clauses
+o 132
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 131
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 130
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 129
+c flipped 18/100 variables (k=18)
+c solution improved by 5 clauses
+o 124
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 123
+c flipped 17/100 variables (k=18)
+c solution improved by 3 clauses
+o 120
+c flipped 17/100 variables (k=18)
+c solution improved by 1 clause
+o 119
+c flipped 18/100 variables (k=18)
+c solution improved by 5 clauses
+o 114
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 112
+c flipped 18/100 variables (k=18)
+c solution improved by 16 clauses
+o 96
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 95
+c flipped 18/100 variables (k=18)
+c solution improved by 4 clauses
+o 91
+c flipped 11/100 variables (k=18)
+c solution improved by 4 clauses
+o 87
+c flipped 18/100 variables (k=18)
+c solution improved by 10 clauses
+o 77
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 75
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 74
+c flipped 18/100 variables (k=18)
+c solution improved by 8 clauses
+o 66
+c flipped 18/100 variables (k=18)
+c solution improved by 3 clauses
+o 63
+c flipped 18/100 variables (k=18)
+c solution improved by 16 clauses
+o 47
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 46
+c flipped 17/100 variables (k=18)
+c solution improved by 7 clauses
+o 39
+c flipped 18/100 variables (k=18)
+c solution improved by 4 clauses
+o 35
+c flipped 18/100 variables (k=18)
+c solution improved by 5 clauses
+o 30
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 29
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 28
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 27
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 26
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 25
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 24
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 23
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 21
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 20
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 19
+c flipped 18/100 variables (k=18)
+c solution improved by 4 clauses
+o 15
+c flipped 18/100 variables (k=18)
+c solution improved by 4 clauses
+o 11
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 10
+c flipped 18/100 variables (k=18)
+c solution improved by 2 clauses
+o 8
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 7
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 6
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 5
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 4
+c flipped 15/100 variables (k=18)
+c solution improved by 1 clause
+o 3
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 2
+c flipped 18/100 variables (k=18)
+c solution improved by 1 clause
+o 1
+v 1111010101100011111011101001111101001100101110011101000000110001110111110010001011010101101111110101
+c stuck at 429/430 clauses with k=18
+s UNKNOWN
